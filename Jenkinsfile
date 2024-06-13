@@ -40,7 +40,7 @@ pipeline {
 
     post {
         cleanup {
-            // Remove the SSH key file if necessary
+            // Remove the SSH key file if necessary//
             sh 'rm -f id_rsa'
         }
     }
