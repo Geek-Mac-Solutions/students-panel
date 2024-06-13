@@ -3,7 +3,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(/themes/default/img/home-bg.jpg);
+    background-color: #d3d4d6;
 }
 /* .footer-section
 {
@@ -184,6 +184,10 @@ a:hover,
 .rounded-35{
     border-radius: 50px;
 }
+.bg-light-blue{
+    background-color: #4834fa60;
+}
+
 .logo-footer
 {
     margin-bottom: -2em;
@@ -191,6 +195,13 @@ a:hover,
 .border-new
  {
     border: 10px solid #80199f;
+ }
+
+ .border-new1
+ {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+
+
  }
 .btn-cus{
 
@@ -200,11 +211,20 @@ a:hover,
 }
 
 
+.middle-hight {
+    min-height: 330px;
+
+}
 
 
 
-
-
+.serch-btn {
+    position: absolute;
+  
+    margin-top: -2em;
+    right: 1em;
+    background-color: transparent;
+}
 
 
 
@@ -227,6 +247,9 @@ a:hover,
     .font-36 {
         font-size: 24px;
     }
+    .font-20 {
+        font-size: 16px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -239,6 +262,9 @@ a:hover,
     .font-13 {
         font-size: 11px;
     }
+    .font-24 {
+        font-size: 18px;
+    }
 }
 
 
@@ -246,6 +272,9 @@ a:hover,
 @media (min-width: 992px) and (max-width: 1199px) {
     .font-36 {
         font-size: 24px;
+    }
+    .font-24 {
+        font-size: 18px;
     }
     .font-15 {
         font-size: 13px;
