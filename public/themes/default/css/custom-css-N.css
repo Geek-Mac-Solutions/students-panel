@@ -174,7 +174,14 @@ a:hover,
 .text-purple {
     color: #552a7c;
 }
-
+.form-check-input:checked {
+    background-color: #192e7e;
+    border-color: #192e7e;
+}
+.form-check-input:focus {
+   
+    box-shadow: unset;
+}
 .gradient-background {
     background: linear-gradient(90.28deg, #192e7e 70.76%, #80199f 90.85%);
 }

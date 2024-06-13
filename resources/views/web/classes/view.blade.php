@@ -1,5 +1,8 @@
 @extends('web.layouts.app')
 @section('content')
+@php
+ use Carbon\Carbon;
+  @endphp
 <div class="container-fluid">
    <div class="row align-items-center pt-2">
       <div class="col-lg-3 col-sm-3">
@@ -11,7 +14,10 @@
       <div class="col-lg-6 col-sm-6 text-center">
          <h1 class="font-36 fw-bold text-uppercase text-purple">TODAY LIVE CLASSES
          </h1>
-         <p class="font-20 fw-500 text-purple">09.10.2024 | Saturday | 05.00 PM
+         @php
+         $currentDateTime = Carbon::now('Asia/Colombo');
+         @endphp
+         <p class="font-20 fw-500 text-purple">{{ $currentDateTime->format('d.m.Y | l | h.i A') }}
          </p>
       </div>
    </div>
