@@ -179,7 +179,7 @@ a:hover,
     border-color: #192e7e;
 }
 .form-check-input:focus {
-   
+
     box-shadow: unset;
 }
 .gradient-background {
@@ -227,10 +227,14 @@ a:hover,
 
 .serch-btn {
     position: absolute;
-  
+
     margin-top: -2em;
     right: 1em;
     background-color: transparent;
+}
+.dt-bootstrap5 .col-md-6{
+    flex: 0 0 auto;
+    width: 50%;
 }
 
 
