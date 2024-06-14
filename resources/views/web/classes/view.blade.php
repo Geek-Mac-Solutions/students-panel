@@ -56,7 +56,19 @@
                             <span class="font-9"> FIRST WEEK PASS</span>
 
 
-                      </button>
+                      </button><br><br>
+                      <button  class="border-0 btn-cus w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-danger fw-500 align-items-center text-white hvr-shrink   "  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        YOU CAN’T WATCH  <br>
+                        <span class="font-9">Class Fees Pending</span>
+
+
+                  </button>
+                  <br><br>
+                      <button  class="border-0 btn-cus w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-warning fw-500 align-items-center text-white hvr-shrink   "  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        ENDED  
+
+
+                  </button>
 
                </div>
             </div>
