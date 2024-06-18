@@ -79,7 +79,7 @@
       <div class="row justify-content-around pt-lg-5 mx-auto">
          <div class="col-lg-1"></div>
          <div class="col-lg-3 col-sm-5  col-10 pt-lg-0 pt-3">
-            <a href="" class="hvr-shrink w-100">
+            <a href="{{  route('web.fees.view') }}" class="hvr-shrink w-100">
                <div class="row align-items-center gradient-background-1 py-3 justify-content-around rounded-35 w-100">
                   <div class="col-2 py-1">
                      <i class="fa-solid fa-money-bill-1-wave fs-3 text-white"></i>
@@ -268,7 +268,7 @@
             </a>
          </div>
          <div class="col-lg-3 col-sm-4  col-10  px-3  mb-3 mx-auto">
-            <a href="" class="hvr-shrink w-100">
+            <a href="{{  route('web.fees.view') }}" class="hvr-shrink w-100">
                <div class="row align-items-center gradient-background-1 py-3 justify-content-around rounded-35 w-100">
                   <div class="col-1  py-1">
                      <i class="fa-solid fa-money-bill fs-3 text-white"></i>
