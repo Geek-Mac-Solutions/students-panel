@@ -11,7 +11,9 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+      <link rel="stylesheet" href="{{asset('themes/default/css/owl.carousel.min.css')}}">
       <link rel="stylesheet" href="{{asset('themes/default/css/hover.css')}}">
       <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
       <link rel="stylesheet" href="{{asset('themes/default/css/custom-css-N.css')}}">
@@ -31,9 +33,12 @@
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
       <!-- Custom JS -->
+      <!-- Owl Carousel JS CDN -->
+
+      <script src="{{ asset('themes/default/js/owl.carousel.min.js') }}"></script>
       <script src="{{ asset('themes/default/js/custom-N.js') }}"></script>
 
-      
+
 
       <script>
          document.getElementById('flexSwitchCheckDefault').addEventListener('change', function () {
@@ -49,6 +54,10 @@
                toggleDiv1.classList.remove('d-none');
             }
          });
+
+
+ 
+
       </script>
    </body>
 </html>

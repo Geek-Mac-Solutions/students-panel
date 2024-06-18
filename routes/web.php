@@ -3,6 +3,9 @@
 use App\Http\Controllers\Web\Home\HomeController;
 use App\Http\Controllers\Web\ClassController;
 use App\Http\Controllers\Web\VideoController;
+use App\Http\Controllers\Web\FeesController;
+use App\Http\Controllers\Web\PaymentHistoryController;
+use App\Http\Controllers\Web\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,9 +31,21 @@ Route::get('/video/monthly/set', [VideoController::class, 'videoMonthlySet'])->n
 Route::get('/video/subject/view', [VideoController::class, 'videoSubjectView'])->name('web.video.subject');
 Route::get('/video/subject/view-list', [VideoController::class, 'videoSubjectList'])->name('web.video.subject.list');
 
+// Fees
+Route::get('/fees/view', [FeesController::class, 'feesView'])->name('web.fees.view');
+Route::get('/fees/class', [FeesController::class, 'feesClass'])->name('web.fees.class');
 
 
 
+// PaymentHistory
+Route::get('/payment-history-month', [PaymentHistoryController::class, 'paymentHistoryMonth'])->name('web.payment.month');
+Route::get('/payment-history-list', [PaymentHistoryController::class, 'paymentHistoryList'])->name('web.payment.list');
+
+
+
+// profile
+
+Route::get('/my-profile', [ProfileController::class, 'myProfile'])->name('web.profile');
 
 
 

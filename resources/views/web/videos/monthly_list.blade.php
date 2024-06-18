@@ -22,7 +22,7 @@
    <div class="row middle-hight">
       <div  class="col-lg-3 col-sm-4 mb-3 align-items-center">
          <div class="border-new pt-3 pb-5 px-3 rounded-35 bg-white text-center">
-           
+
             <div class="row justify-content-center pt-2 pb-3">
                <div class="col-6">
                   <img class="d-block w-100 rounded-circle" src="{{asset('themes/default/img/place-holder.png')}}"
@@ -37,17 +37,18 @@
             <p class="font-14 fw-500 text-dark text-start">Month - <span class="fw-bolder text-dark"> January
                </span>
             </p>
-             
+
             <div class="row justify-content-center pt-4">
                <div class="col-lg-10 text-white">
 
-         
-                
+
+
                 <a href="{{ route('web.video.set.monthly') }}" class=" w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-primary fw-500 align-items-center text-white hvr-shrink">CLICK TO VIEW</a>
 
                </div>
             </div>
          </div>
+        
       </div>
 
 
@@ -55,7 +56,7 @@
 
 
 
- 
+
    </div>
 </div>
 @endsection

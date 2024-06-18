@@ -25,10 +25,21 @@
 </div>
 <div class="container-fluid py-lg-5 py-3 px-lg-5 ">
    <div class="row middle-hight">
+
+
+
+
+
        <div class="col-12">
 
+        <div class="row justify-content-end">
+            <div class="col-3 text-end">
+                <i class="fa-solid fa-file-excel fs-2 text-success mb-2 hvr-grow"></i>
+               <span class=" text-uppercase font-13 fw-bold text-dark"> Download excel</span>
+            </div>
 
-   
+          </div>
+
 
 
 
@@ -43,7 +54,7 @@
                      <th>VIDEO</th>
                   </tr>
                </thead>
-               <tbody class="font-14 align-items-center">
+               <tbody class="font-14 align-items-center fw-500">
                   <tr>
                      <td>JANUARY</td>
                      <td>01.01.2024</td>
