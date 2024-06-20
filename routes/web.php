@@ -6,6 +6,8 @@ use App\Http\Controllers\Web\VideoController;
 use App\Http\Controllers\Web\FeesController;
 use App\Http\Controllers\Web\PaymentHistoryController;
 use App\Http\Controllers\Web\ProfileController;
+use App\Http\Controllers\Web\TutesAndBookController;
+use App\Http\Controllers\Web\TimeTableController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -46,6 +48,18 @@ Route::get('/payment-history-list', [PaymentHistoryController::class, 'paymentHi
 // profile
 
 Route::get('/my-profile', [ProfileController::class, 'myProfile'])->name('web.profile');
+
+
+// Class Tutes And Books
+Route::get('/tutes-books', [TutesAndBookController::class, 'tutesBook'])->name('web.tutes.book');
+Route::get('/tutes-books-view', [TutesAndBookController::class, 'tutesBookMonthly'])->name('web.tutes.view');
+Route::get('/tutes-view', [TutesAndBookController::class, 'tutesView'])->name('web.tutes.open');
+
+
+
+// TIME TABLES
+Route::get('/time-table', [TimeTableController::class, 'timeTable'])->name('web.time.table');
+
 
 
 

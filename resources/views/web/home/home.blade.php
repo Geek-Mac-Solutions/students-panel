@@ -55,11 +55,11 @@
                   </div>
                   <div class="col-lg-8 col-9 py-1">
                      <p class="font-14 text-white fw-500">Live Class</p>
-                     <p class="font-14 text-white fw-500">Live Class</p>
+                     <p class="font-14 text-white fw-500">සජිවි පන්ති</p>
                   </div>
                </div>
             </a>
-            
+
          </div>
          <div class="col-lg-3 col-sm-5  col-10 pt-lg-0 pt-sm-0 pt-3">
             <a href="{{ route('web.video.view') }}"  class="hvr-shrink w-100">
@@ -69,7 +69,7 @@
                   </div>
                   <div class="col-lg-8 col-9 py-1">
                      <p class="font-14 text-white fw-500">Video Recoding</p>
-                     <p class="font-14 text-white fw-500">Video Recoding</p>
+                     <p class="font-14 text-white fw-500">වීඩියෝ පටිගත කිරිම්</p>
                   </div>
                </div>
             </a>
@@ -86,20 +86,20 @@
                   </div>
                   <div class="col-lg-8 col-9 py-1">
                      <p class="font-14 text-white fw-500">Class Fees</p>
-                     <p class="font-14 text-white fw-500">Class Fees</p>
+                     <p class="font-14 text-white fw-500">පන්ති ගාස්තු</p>
                   </div>
                </div>
             </a>
          </div>
          <div class="col-lg-3 col-sm-5  col-10 pt-lg-0 pt-3">
-            <a href="" class="hvr-shrink w-100">
+            <a href="{{ route('web.tutes.book') }}"  class="hvr-shrink w-100">
                <div class="row align-items-center gradient-background-1 py-3 justify-content-around rounded-35 w-100">
                   <div class="col-2 py-1">
                      <i class="fa fa-book fs-3 text-white"></i>
                   </div>
-                  <div class="col-lg-8 col-9 py-1">
+                  <div class="col-lg-9 col-9 py-1">
                      <p class="font-14 text-white fw-500">Class Tutes & Books</p>
-                     <p class="font-14 text-white fw-500">Class Tutes & Books</p>
+                     <p class="font-14 text-white fw-500">පන්ති නිබන්දන සහ පොත්</p>
                   </div>
                </div>
             </a>
@@ -108,14 +108,14 @@
       </div>
       <div class="row justify-content-around pt-lg-5 mx-auto">
          <div class="col-lg-3 col-sm-5  col-10 pt-lg-0 pt-3">
-            <a href="" class="hvr-shrink w-100">
+            <a href="{{  route('web.time.table') }}" class="hvr-shrink w-100">
                <div class="row align-items-center gradient-background-1 py-3 justify-content-around rounded-35 w-100">
                   <div class="col-2 py-1">
                      <i class="fa fa-clock fs-3 text-white"></i>
                   </div>
                   <div class="col-lg-8 col-9 py-1">
                      <p class="font-14 text-white fw-500">Time Tables</p>
-                     <p class="font-14 text-white fw-500">Time Tables</p>
+                     <p class="font-14 text-white fw-500">කාල සටහන්</p>
                   </div>
                </div>
             </a>
@@ -132,7 +132,7 @@
                   </div>
                   <div class="col-10 py-1 ps-4">
                      <p class="font-13 text-white fw-500">Live Class</p>
-                     <p class="font-13 text-white fw-500">Live Class</p>
+                     <p class="font-13 text-white fw-500">සජිවි පන්ති</p>
                   </div>
                </div>
             </a>
@@ -145,20 +145,20 @@
                   </div>
                   <div class="col-10 py-1 ps-4">
                      <p class="font-13 text-white fw-500">Video Recoding</p>
-                     <p class="font-13 text-white fw-500">Video Recoding</p>
+                     <p class="font-13 text-white fw-500">වීඩියෝ පටිගත කිරිම්</p>
                   </div>
                </div>
             </a>
          </div>
          <div class="col-lg-3 col-sm-4  col-10  px-3  mb-3 mx-auto">
-            <a href="" class="hvr-shrink w-100">
+            <a href="{{ route('web.tutes.book') }}" class="hvr-shrink w-100">
                <div class="row align-items-center gradient-background-1 py-3 justify-content-around rounded-35 w-100">
                   <div class="col-1  py-1">
                      <i class="fa fa-book fs-3 text-white"></i>
                   </div>
                   <div class="col-10 py-1 ps-4">
                      <p class="font-13 text-white fw-500">Class Tutes and Books</p>
-                     <p class="font-13 text-white fw-500">Class Tutes and Books</p>
+                     <p class="font-13 text-white fw-500">පන්ති නිබන්දන සහ පොත්</p>
                   </div>
                </div>
             </a>
@@ -171,7 +171,7 @@
                   </div>
                   <div class="col-10 py-1 ps-4">
                      <p class="font-13 text-white fw-500">Class Paper</p>
-                     <p class="font-13 text-white fw-500">Class Paper</p>
+                     <p class="font-13 text-white fw-500">පන්ති ප්‍රශ්නපත්‍ර</p>
                   </div>
                </div>
             </a>
@@ -184,7 +184,7 @@
                   </div>
                   <div class="col-10 py-1 ps-4">
                      <p class="font-13 text-white fw-500">Talents</p>
-                     <p class="font-13 text-white fw-500">Talents</p>
+                     <p class="font-13 text-white fw-500">දක්ෂතා</p>
                   </div>
                </div>
             </a>
@@ -197,7 +197,7 @@
                   </div>
                   <div class="col-10 py-1 ps-4">
                      <p class="font-13 text-white fw-500">Notes & Paper Answers</p>
-                     <p class="font-13 text-white fw-500">Notes & Paper Answers</p>
+                     <p class="font-13 text-white fw-500">සටහන් සහ ප්‍රශ්නපත්‍ර පිලිතුරු</p>
                   </div>
                </div>
             </a>
@@ -210,7 +210,7 @@
                   </div>
                   <div class="col-10 py-1 ps-4">
                      <p class="font-13 text-white fw-500">Learning Management</p>
-                     <p class="font-13 text-white fw-500">Learning Management</p>
+                     <p class="font-13 text-white fw-500">ඉගෙනුම් කළමනාකරණය</p>
                   </div>
                </div>
             </a>
@@ -223,7 +223,7 @@
                   </div>
                   <div class="col-10 py-1 ps-4">
                      <p class="font-13 text-white fw-500">Online Exams</p>
-                     <p class="font-13 text-white fw-500">Online Exams</p>
+                     <p class="font-13 text-white fw-500">සජිවි පන්ති</p>
                   </div>
                </div>
             </a>
@@ -236,7 +236,7 @@
                   </div>
                   <div class="col-10 py-1 ps-4">
                      <p class="font-13 text-white fw-500">Attendance</p>
-                     <p class="font-13 text-white fw-500">Attendance</p>
+                     <p class="font-13 text-white fw-500">දරුවාගේ පැමිණිම</p>
                   </div>
                </div>
             </a>
@@ -249,7 +249,7 @@
                   </div>
                   <div class="col-10 py-1 ps-4">
                      <p class="font-13 text-white fw-500">Teachers & New Subjects</p>
-                     <p class="font-13 text-white fw-500">Teachers & New Subjects</p>
+                     <p class="font-13 text-white fw-500">ගුරුවරුන් සහ නව විෂයන් </p>
                   </div>
                </div>
             </a>
@@ -262,7 +262,7 @@
                   </div>
                   <div class="col-10 py-1 ps-4">
                      <p class="font-13 text-white fw-500">Notice Board</p>
-                     <p class="font-13 text-white fw-500">Notice Board</p>
+                     <p class="font-13 text-white fw-500">දැන්වීම් පුවරුව</p>
                   </div>
                </div>
             </a>
@@ -275,7 +275,7 @@
                   </div>
                   <div class="col-10 py-1 ps-4">
                      <p class="font-13 text-white fw-500">Class Fees</p>
-                     <p class="font-13 text-white fw-500">Class Fees</p>
+                     <p class="font-13 text-white fw-500">පන්ති ගාස්තු</p>
                   </div>
                </div>
             </a>
@@ -288,7 +288,7 @@
                   </div>
                   <div class="col-10 py-1 ps-4">
                      <p class="font-13 text-white fw-500">Teacher Review</p>
-                     <p class="font-13 text-white fw-500">Teacher Review</p>
+                     <p class="font-13 text-white fw-500">ගුරුවරුන් ගැන ඔබේ අදහස්</p>
                   </div>
                </div>
             </a>
@@ -301,20 +301,20 @@
                   </div>
                   <div class="col-10 py-1 ps-4">
                      <p class="font-13 text-white fw-500">Final Analysis Report</p>
-                     <p class="font-13 text-white fw-500">Final Analysis Report</p>
+                     <p class="font-13 text-white fw-500">විශ්ලේෂණ වාර්තා</p>
                   </div>
                </div>
             </a>
          </div>
          <div class="col-lg-3 col-sm-4  col-10  px-3  mb-3 mx-auto">
-            <a href="" class="hvr-shrink w-100">
+            <a href="{{  route('web.time.table') }}" class="hvr-shrink w-100">
                <div class="row align-items-center gradient-background-1 py-3 justify-content-around rounded-35 w-100">
                   <div class="col-1 py-1">
                      <i class="fa-solid fa-table fs-3 text-white"></i>
                   </div>
                   <div class="col-10 py-1 ps-4">
                      <p class="font-13 text-white fw-500">Time Tables</p>
-                     <p class="font-13 text-white fw-500">Time Tables</p>
+                     <p class="font-13 text-white fw-500">කාල සටහන්</p>
                   </div>
                </div>
             </a>
