@@ -11,12 +11,12 @@
                 <a class="social-button text-white hvr-wobble-bottom" href=" " target="_blank">
                 <i class="fa  fa-bell font-16"></i>
                 </a>
-                <a class="social-button text-white hvr-wobble-bottom" href="{{ route('web.profile') }}" target="_blank">
+                <a class="social-button text-white hvr-wobble-bottom" href="{{ route('web.profile') }}"  >
                 <i class="fa  fa-user font-16"></i>
                 </a>
 
         </div>
     </div>
-    
+
 </div>
 
