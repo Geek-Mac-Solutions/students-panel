@@ -8,6 +8,8 @@ use App\Http\Controllers\Web\PaymentHistoryController;
 use App\Http\Controllers\Web\ProfileController;
 use App\Http\Controllers\Web\TutesAndBookController;
 use App\Http\Controllers\Web\TimeTableController;
+use App\Http\Controllers\Web\ClassPaperController;
+use App\Http\Controllers\Web\StudentTalentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -59,6 +61,26 @@ Route::get('/tutes-view', [TutesAndBookController::class, 'tutesView'])->name('w
 
 // TIME TABLES
 Route::get('/time-table', [TimeTableController::class, 'timeTable'])->name('web.time.table');
+
+
+
+// Class paper
+Route::get('/class-paper', [ClassPaperController::class, 'classPaper'])->name('web.class.paper');
+Route::get('/class-paper-view', [ClassPaperController::class, 'classPaperMonthly'])->name('web.paper.view');
+Route::get('/class-paper-open', [ClassPaperController::class, 'classPaperView'])->name('web.paper.open');
+
+
+// STUDENT TALENTS
+Route::get('/student-talents', [StudentTalentController::class, 'studentTalent'])->name('web.student.talents');
+Route::get('/online-exam-result', [StudentTalentController::class, 'onlineExamResult'])->name('web.online.exam');
+Route::get('/paper-answer', [StudentTalentController::class, 'paperAnswer'])->name('web.paper.answer');
+Route::get('/student-certificates', [StudentTalentController::class, 'studentCertificate'])->name('web.student.certificates');
+Route::get('/talent-videos', [StudentTalentController::class, 'talentVideos'])->name('web.talent.videos');
+Route::get('/talent-videos-view', [StudentTalentController::class, 'talentVideosView'])->name('web.talent.videosView');
+
+
+
+
 
 
 

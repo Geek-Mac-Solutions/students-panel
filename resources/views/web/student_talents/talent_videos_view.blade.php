@@ -9,7 +9,7 @@
          </a>
       </div>
       <div class="col-lg-6 col-sm-6 text-center">
-         <h1 class="font-36 fw-bold text-uppercase text-purple">VIDEO RECORDINGS
+         <h1 class="font-36 fw-bold text-uppercase text-purple">SCIENCE - ENGLISH MEDIUM
 
          </h1>
          <p class="font-20 fw-500 text-purple">SCIENCE - THEORY - ENGLISH MEDIUM - ABHIMAN SIR
@@ -43,22 +43,16 @@
                      alt="Guru Niwasa LMS">
                </div>
             </div>
-            <p class="font-14 fw-500 text-dark text-start">Class Date - <span class="fw-bolder">2023.01.07</span></p>
-            <p class="font-14 fw-500 text-dark text-start">Topic - <span class="fw-bolder">   Science Theory | English Medium |
-                Abhiman Sir
-               </span>
+ 
+            <p class="font-14 fw-500 text-dark text-start">Topic - <span class="fw-bolder">   - Grade 7 - Science - LESSON
+                EXPLANATIONS BY STUDENTS </span>
             </p>
-            <p class="font-14 fw-500 text-dark text-start">Subject - <span class="fw-bolder"> Grade 6 - Unit 03 - Bio Diversity - Part 1 -
-                2023.01.07
-               </span>
-            </p>
-
-            <p class="font-14 fw-500 text-dark text-start">Grade - <span class="fw-bolder">Grade 6
-            </span></p>
+          
+             
             <div class="row justify-content-center pt-4">
                <div class="col-lg-10 text-white e">
 
-                <a href="https://www.youtube.com/watch?v=tQTfF4FRA2k&list=PLMrrM6QnSnHwCdEQ7IAgFe0WDn21Dua5T" class=" w-100 text-uppercase font-14 text-white e rounded-pill py-2 px-3 bg-success fw-500 align-items-center text-white e hvr-shrink" target="_blank"> Click to watch</a>
+                <a href=" " class=" w-100 text-uppercase font-14 text-white e rounded-pill py-2 px-3 bg-success fw-500 align-items-center text-white e hvr-shrink" > Click to View</a>
 
                    
 
