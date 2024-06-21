@@ -30,7 +30,7 @@
 
 
             <div class="row justify-content-center pt-4">
-                <div class="col-lg-10 text-white">
+                <div class="col-lg-10 text-white e">
 
 
 
@@ -63,7 +63,7 @@
 
 
                 </div>
-                <div class="col-lg-10 text-white pt-3">
+                <div class="col-lg-10 text-white e pt-3">
 
 
 

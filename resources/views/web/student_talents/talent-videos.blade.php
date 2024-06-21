@@ -9,10 +9,11 @@
          </a>
       </div>
       <div class="col-lg-6 col-sm-6 text-center">
-         <h1 class="font-36 fw-bold text-uppercase text-purple">CLASS TUTES AND BOOKS
+         <h1 class="font-36 fw-bold text-uppercase text-purple">SUBJECTWISE TALENT VIDEOS
 
          </h1>
-         <p class="font-20 fw-500 text-purple">JANUARY / GRADE 06
+         <p class="font-20 fw-500 text-purple">< STUDENT NAME > - < GRADE >
+
 
          </p>
       </div>
@@ -39,16 +40,16 @@
             </p>
 
             <div class="row justify-content-center pt-4">
-               <div class="col-lg-10 text-white">
+               <div class="col-lg-10 text-white e">
 
 
 
-                <a href="{{ route('web.tutes.open') }}" class=" w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-primary fw-500 align-items-center text-white hvr-shrink">CLICK TO VIEW</a>
+                <a href="{{ route('web.talent.videosView') }}" class=" w-100 text-uppercase font-14 text-white e rounded-pill py-2 px-3 bg-primary fw-500 align-items-center text-white e hvr-shrink">CLICK TO VIEW</a>
 
                </div>
             </div>
          </div>
-
+        
       </div>
 
 

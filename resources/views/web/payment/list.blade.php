@@ -38,8 +38,8 @@
 
 
           <div class="table-responsive">
-            <table id="example" class="table table-striped table-hover table-bordered">
-               <thead class="text-white gradient-background text-uppercase fw-light font-15">
+            <table id="paymentHistoryTable" class="table table-striped table-hover table-bordered">
+               <thead class="text-white e gradient-background text-uppercase fw-light font-15">
                   <tr>
                      <th>Payment Date</th>
                      <th>Subject</th>
