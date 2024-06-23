@@ -10,6 +10,9 @@ use App\Http\Controllers\Web\TutesAndBookController;
 use App\Http\Controllers\Web\TimeTableController;
 use App\Http\Controllers\Web\ClassPaperController;
 use App\Http\Controllers\Web\StudentTalentController;
+use App\Http\Controllers\Web\NoticeBoardController;
+use App\Http\Controllers\Web\OnlineExamController;
+use App\Http\Controllers\Web\StudentAttendanceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -72,15 +75,32 @@ Route::get('/class-paper-open', [ClassPaperController::class, 'classPaperView'])
 
 // STUDENT TALENTS
 Route::get('/student-talents', [StudentTalentController::class, 'studentTalent'])->name('web.student.talents');
-Route::get('/online-exam-result', [StudentTalentController::class, 'onlineExamResult'])->name('web.online.exam');
+Route::get('/online-exam-result', [StudentTalentController::class, 'onlineExamResult'])->name('web.online.exam_result');
 Route::get('/paper-answer', [StudentTalentController::class, 'paperAnswer'])->name('web.paper.answer');
 Route::get('/student-certificates', [StudentTalentController::class, 'studentCertificate'])->name('web.student.certificates');
 Route::get('/talent-videos', [StudentTalentController::class, 'talentVideos'])->name('web.talent.videos');
 Route::get('/talent-videos-view', [StudentTalentController::class, 'talentVideosView'])->name('web.talent.videosView');
+Route::get('/talent-videos-lesson', [StudentTalentController::class, 'talentVideosLesson'])->name('web.talent.videosLesson');
+Route::get('/my-talent-videos', [StudentTalentController::class, 'myTalentVideos'])->name('web.my_talent');
+Route::get('/other-talent-videos', [StudentTalentController::class, 'otherTalentVideos'])->name('web.other_talent');
+Route::get('/review-teacher', [StudentTalentController::class, 'reviweTeacher'])->name('web.review.teacher');
+
+
+// NoticeBoardController
+Route::get('/notice-board', [NoticeBoardController::class, 'noticeBoard'])->name('web.notice.board');
+
+
+// Online exam
+Route::get('/online-exam', [OnlineExamController::class, 'onlineExam'])->name('web.online.exam');
+Route::get('/online-exam-view', [OnlineExamController::class, 'onlineExamMonthly'])->name('web.online.view');
 
 
 
+// Student Attendance ATTENDANCE
 
+Route::get('/student-attendance', [StudentAttendanceController::class, 'studentAttendance'])->name('web.student.attendance');
+Route::get('/student-attendance-view', [StudentAttendanceController::class, 'studentAttendanceMonthly'])->name('web.student_attendance.view');
+Route::get('/student-attendance-check', [StudentAttendanceController::class, 'studentAttendanceCheck'])->name('web.student_attendance.check');
 
 
 

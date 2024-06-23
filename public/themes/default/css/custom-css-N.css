@@ -194,7 +194,10 @@ a:hover,
 .bg-light-blue{
     background-color: #4834fa60;
 }
+.bd-blue-100 {
 
+    background-color: #cfe2ff;
+}
 .logo-footer
 {
     margin-bottom: -2em;
@@ -309,9 +312,9 @@ a:hover,
 .pagination .page-item .page-link{
     padding: 7px 15px;
     font-size: 13px !important;
- 
+
     color: #000 !important;
-   
+
 }
 
 .pagination .page-item.active .page-link {
@@ -324,10 +327,34 @@ a:hover,
 
 .mh-6 {
     min-height: 6em;
-    
+
+}
+.not-rating{
+ color: #8e8e8e !important;
+}
+.rating input {
+    display: none;
 }
 
+.rating label {
+    font-size: 2em;
+    color: #fff;
+    padding: 0 0.1em;
+    cursor: pointer;
+}
 
+.rating label::before {
+    content: "\2605";
+}
+
+.rating input:checked ~ label {
+    color: #ffc700;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #ffcc00;
+}
 
 
 
@@ -359,6 +386,21 @@ a:hover,
         padding-top: 2em;
 
     }
+    .font-30 {
+        font-size: 20px;
+    }
+    .font-17 {
+        font-size: 14px;
+    }
+    .font-13 {
+        font-size: 12px;
+    }
+    .font-12 {
+        font-size: 11px;
+    }
+    .form-switch {
+        padding-left: 0.5em;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -376,6 +418,21 @@ a:hover,
     }
     .font-20 {
         font-size: 17px;
+    }
+    .font-30 {
+        font-size: 18px;
+    }
+    .font-17 {
+        font-size: 14px;
+    }
+    .font-13 {
+        font-size: 12px;
+    }
+    .font-12 {
+        font-size: 11px;
+    }
+    .form-switch {
+        padding-left: 1em;
     }
 }
 
