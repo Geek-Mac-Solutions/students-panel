@@ -27,7 +27,7 @@
                     </button>
                     </form>
             </div>
-            
+
           </div>
      </div>
    </div>
@@ -36,25 +36,25 @@
    <div class="row middle-hight">
       <div  class="col-lg-3 col-sm-4 mb-3 align-items-center">
          <div class="border-new pt-3 pb-5 px-3 rounded-35 bg-white text-center">
-           
+
             <div class="row justify-content-center pt-2 pb-3">
                <div class="col-12">
                   <img class="d-block w-100 rounded-3" src="{{asset('themes/default/img/hq720.jpg')}}"
                      alt="Guru Niwasa LMS">
                </div>
             </div>
- 
+
             <p class="font-14 fw-500 text-dark text-start">Topic - <span class="fw-bolder">   - Grade 7 - Science - LESSON
                 EXPLANATIONS BY STUDENTS </span>
             </p>
-          
-             
+
+
             <div class="row justify-content-center pt-4">
                <div class="col-lg-10 text-white e">
 
-                <a href=" " class=" w-100 text-uppercase font-14 text-white e rounded-pill py-2 px-3 bg-success fw-500 align-items-center text-white e hvr-shrink" > Click to View</a>
+                <a href="{{route('web.talent.videosLesson')}}" class=" w-100 text-uppercase font-14 text-white e rounded-pill py-2 px-3 bg-success fw-500 align-items-center text-white e hvr-shrink" > Click to View</a>
 
-                   
+
 
                </div>
             </div>
@@ -62,10 +62,10 @@
       </div>
 
 
- 
 
 
- 
+
+
    </div>
 </div>
 @endsection

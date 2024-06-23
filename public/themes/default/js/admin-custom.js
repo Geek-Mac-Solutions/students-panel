@@ -5,6 +5,7 @@ $(document).ready( function () {
     $('#onlinExamTable').DataTable();
     $('#onlinTestResultTable').DataTable();
     $('#rankTable').DataTable();
+    $('#attendanceTable').DataTable();
 });
 
 $('.fees-Carousel').owlCarousel({
@@ -28,3 +29,29 @@ $('.fees-Carousel').owlCarousel({
         }
     }
 });
+
+
+
+
+$('.reviwe-teacher').owlCarousel({
+    margin: 30,
+    loop: true,
+    dots: false,
+    nav: true,
+    center: true,
+    autoplay: true,
+
+    responsive: {
+        0: {
+            items: 1,
+            
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 1
+        }
+    }
+});
+

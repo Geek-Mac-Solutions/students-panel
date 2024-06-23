@@ -80,7 +80,61 @@ class StudentTalentController extends Controller
         }
     }
 
-    
-    
+    public function talentVideosLesson()
+    {
+        try{
+
+            return view('web.student_talents.talent_videos_lesson');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+
+
+
+
+  public function myTalentVideos()
+    {
+        try{
+
+            return view('web.student_talents.my_talent_videos');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+
+
+
+
+
+    public function otherTalentVideos()
+    {
+        try{
+
+            return view('web.student_talents.other_talent_videos');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+
+
+    public function reviweTeacher()
+    {
+        try{
+
+            return view('web.student_talents.reviwe_teacher');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+
 
 }
