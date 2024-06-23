@@ -6,6 +6,7 @@ $(document).ready( function () {
     $('#onlinTestResultTable').DataTable();
     $('#rankTable').DataTable();
     $('#attendanceTable').DataTable();
+    $('#notePaperTable').DataTable();
 });
 
 $('.fees-Carousel').owlCarousel({

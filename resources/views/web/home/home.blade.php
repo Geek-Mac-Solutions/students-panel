@@ -190,7 +190,7 @@
             </a>
          </div>
          <div class="col-lg-3 col-sm-4  col-10  px-3  mb-3 mx-auto">
-            <a href="" class="hvr-shrink w-100">
+            <a href="{{ route('web.note-paper.ansewer')}}" class="hvr-shrink w-100">
                <div class="row align-items-center gradient-background-1 py-3 justify-content-around rounded-35 w-100">
                   <div class="col-1  py-1">
                      <i class="fa-solid fa-newspaper fs-3 text-white e"></i>
