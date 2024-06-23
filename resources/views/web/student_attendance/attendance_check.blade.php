@@ -43,7 +43,7 @@
  
  
  
-           <div class="table-responsive ext-center ">
+            <div class="table-responsive  ">
              <table id="attendanceTable" class="table table-striped table-hover table-bordered">
                 <thead class="text-white e gradient-background text-uppercase fw-light font-15">
                  

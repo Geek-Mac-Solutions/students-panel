@@ -13,6 +13,7 @@ use App\Http\Controllers\Web\StudentTalentController;
 use App\Http\Controllers\Web\NoticeBoardController;
 use App\Http\Controllers\Web\OnlineExamController;
 use App\Http\Controllers\Web\StudentAttendanceController;
+use App\Http\Controllers\Web\NoteAndPaperController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -47,6 +48,10 @@ Route::get('/fees/class', [FeesController::class, 'feesClass'])->name('web.fees.
 // PaymentHistory
 Route::get('/payment-history-month', [PaymentHistoryController::class, 'paymentHistoryMonth'])->name('web.payment.month');
 Route::get('/payment-history-list', [PaymentHistoryController::class, 'paymentHistoryList'])->name('web.payment.list');
+
+// NoteAndPaperController
+Route::get('/note-paper-ansewer', [NoteAndPaperController::class, 'notePaper'])->name('web.note-paper.ansewer');
+Route::get('/note-paper-ansewer-list', [NoteAndPaperController::class, 'notePaperList'])->name('web.note-paper.list');
 
 
 
