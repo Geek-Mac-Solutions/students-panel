@@ -63,7 +63,7 @@
 
 
                 </div>
-                <div class="col-lg-10 text-white e pt-3">
+                <div class="col-lg-10 text-white pt-3">
 
 
 

@@ -55,7 +55,7 @@
         </div>
         <div class="modal-footer">
           
-          <button type="button" class="btn text-uppercase font-14 text-white e rounded-pill py-2 px-4 bg-primary fw-500 align-items-center text-white e hvr-shrink">Submit</button>
+          <button type="button" class="btn text-uppercase font-14 text-white rounded-pill py-2 px-4 bg-primary fw-500 align-items-center text-white hvr-shrink">Submit</button>
         </div>
     </form>
       </div>
@@ -81,7 +81,7 @@
            <div class="row justify-content-center pt-4">
               <div class="col-lg-10 text-white e">
 
-               <a href="https://www.youtube.com/watch?v=tQTfF4FRA2k&list=PLMrrM6QnSnHwCdEQ7IAgFe0WDn21Dua5T" class=" w-100 text-uppercase font-14 text-white e rounded-pill py-2 px-3 bg-success fw-500 align-items-center text-white e hvr-shrink" target="_blank"> Click to watch</a>
+               <a href="https://www.youtube.com/watch?v=tQTfF4FRA2k&list=PLMrrM6QnSnHwCdEQ7IAgFe0WDn21Dua5T" class=" w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-success fw-500 align-items-center text-white hvr-shrink" target="_blank"> Click to watch</a>
 
                   
 

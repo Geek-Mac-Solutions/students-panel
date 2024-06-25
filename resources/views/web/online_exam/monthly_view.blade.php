@@ -47,9 +47,9 @@
                <div class="col-lg-11 text-white  ">
 
 
-                <a href="{{ route('web.paper.answer') }}" class=" w-100 text-uppercase font-14 text-white e rounded-pill py-2 px-3 bg-primary fw-500 align-items-center text-white mb-3 hvr-shrink"> YOUR ANSWERS</a>
+                <a href="{{ route('web.paper.answer') }}" class=" w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-primary fw-500 align-items-center text-white mb-3 hvr-shrink"> YOUR ANSWERS</a>
 
-                <a data-bs-toggle="modal" data-bs-target="#resultRank" class=" w-100 text-uppercase font-14 text-white e rounded-pill py-2 px-3 bg-success fw-500 align-items-center text-white  hvr-shrink">EXAM RESULTS</a>
+                <a data-bs-toggle="modal" data-bs-target="#resultRank" class=" w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-success fw-500 align-items-center text-white  hvr-shrink">EXAM RESULTS</a>
 
 
                 
@@ -89,7 +89,7 @@
                 <div class="col-lg-11">
 
              <table id="rankTable" class="table table-striped table-hover table-bordered text-start">
-                <thead class="text-white e gradient-background text-uppercase fw-light font-15">
+                <thead class="text-white gradient-background text-uppercase fw-light font-15">
                    <tr>
                       <th>RANK</th>
                       <th>STUDENT NAME</th>
@@ -103,7 +103,7 @@
                       <td>1</td>
                       <td>PATHUM SHANAKA
                     </td>
-                      <td><p class="py-2 px-4 bg-success text-white e font-13 text-center rounded-pill">
+                      <td><p class="py-2 px-4 bg-success text-white font-13 text-center rounded-pill">
                         95</p></td>
                       
                    </tr>

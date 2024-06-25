@@ -45,7 +45,7 @@
 
           <div class="table-responsive">
             <table id="videoRecTable" class="table table-striped table-hover table-bordered">
-               <thead class="text-white e gradient-background text-uppercase fw-light font-15">
+               <thead class="text-white gradient-background text-uppercase fw-light font-15">
                   <tr>
                      <th>MONTH</th>
                      <th>CLASS  Date</th>
@@ -63,7 +63,7 @@
                         Life - Part 01 (English Medium) - 2023.07.19
                      </td>
                      <td>
-                        <a class="w-100 text-uppercase text-center font-10 text-white e rounded-pill py-1 px-3 bg-success fw-bolder align-items-center text-white e hvr-shrink   "  href="https://www.youtube.com/watch?v=tQTfF4FRA2k&list=PLMrrM6QnSnHwCdEQ7IAgFe0WDn21Dua5T" target="_blank">
+                        <a class="w-100 text-uppercase text-center font-10 text-white rounded-pill py-1 px-3 bg-success fw-bolder align-items-center text-white hvr-shrink   "  href="https://www.youtube.com/watch?v=tQTfF4FRA2k&list=PLMrrM6QnSnHwCdEQ7IAgFe0WDn21Dua5T" target="_blank">
                         View More
                         </a>
                      </td>

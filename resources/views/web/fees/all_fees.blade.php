@@ -32,7 +32,7 @@ use Carbon\Carbon;
                </p>
                <div class="row justify-content-center pt-4">
                   <div class="col-lg-10 text-white e">
-                     <a href="{{ route('web.fees.class') }}" class=" w-100 text-uppercase font-14 text-white e rounded-pill py-2 px-3 bg-primary fw-500 align-items-center text-white e hvr-shrink">Pay</a>
+                     <a href="{{ route('web.fees.class') }}" class=" w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-primary fw-500 align-items-center   hvr-shrink">Pay</a>
                   </div>
                </div>
                <h3 class="font-27 fw-bold text-uppercase text-purple pt-3">FEBRUARY</h3>
@@ -47,7 +47,7 @@ use Carbon\Carbon;
                 </p>
                 <div class="row justify-content-center pt-4">
                    <div class="col-lg-10 text-white e">
-                      <a href="{{ route('web.fees.class') }}" class=" w-100 text-uppercase font-14 text-white e rounded-pill py-2 px-3 bg-primary fw-500 align-items-center text-white e hvr-shrink">Pay</a>
+                      <a href="{{ route('web.fees.class') }}" class=" w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-primary fw-500 align-items-center   hvr-shrink">Pay</a>
                    </div>
                 </div>
                 <h3 class="font-27 fw-bold text-uppercase text-purple pt-3">March</h3>
@@ -57,7 +57,7 @@ use Carbon\Carbon;
 
          <div class="row justify-content-center">
             <div class="col-lg-3 col-10 text-center">
-                <a href="{{ route('web.payment.month') }}" class=" w-100 text-uppercase font-15 text-white e rounded-pill p-3 bg-secondary fw-500 align-items-center text-white e hvr-shrink">PAYMENT HISTORY
+                <a href="{{ route('web.payment.month') }}" class=" w-100 text-uppercase font-15 text-white rounded-pill p-3 bg-secondary fw-500 align-items-center text-white hvr-shrink">PAYMENT HISTORY
                 </a>
             </div>
 

@@ -54,7 +54,7 @@
         </div>
         <div class="modal-footer">
           
-          <button type="button" class="btn text-uppercase font-14 text-white e rounded-pill py-2 px-4 bg-primary fw-500 align-items-center text-white e hvr-shrink">Submit</button>
+          <button type="button" class="btn text-uppercase font-14 text-white rounded-pill py-2 px-4 bg-primary fw-500 align-items-center text-white hvr-shrink">Submit</button>
         </div>
     </form>
       </div>
@@ -72,7 +72,7 @@
             </div>
             <div class="row justify-content-center pt-3">
                <div class="col-lg-10 text-white e">
-                  <a href=" " title="Dowload Certificate" class=" w-100 text-uppercase font-13 text-white e rounded-pill py-2 px-3 bg-success fw-500 align-items-center text-white e hvr-shrink" download> Dowload Certificate</a>
+                  <a href=" " title="Dowload Certificate" class=" w-100 text-uppercase font-13 text-white rounded-pill py-2 px-3 bg-success fw-500 align-items-center text-white hvr-shrink" download> Dowload Certificate</a>
                </div>
             </div>
          </div>
@@ -87,7 +87,7 @@
            </div>
            <div class="row justify-content-center pt-3">
               <div class="col-lg-10 text-white e">
-                 <a href=" " title="Dowload Certificate" class=" w-100 text-uppercase font-13 text-white e rounded-pill py-2 px-3 bg-success fw-500 align-items-center text-white e hvr-shrink" download> Dowload Certificate</a>
+                 <a href=" " title="Dowload Certificate" class=" w-100 text-uppercase font-13 text-white rounded-pill py-2 px-3 bg-success fw-500 align-items-center text-white hvr-shrink" download> Dowload Certificate</a>
               </div>
            </div>
         </div>

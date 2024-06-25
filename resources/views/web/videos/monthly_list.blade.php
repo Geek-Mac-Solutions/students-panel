@@ -43,7 +43,7 @@
 
 
 
-                <a href="{{ route('web.video.set.monthly') }}" class=" w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-primary fw-500 align-items-center text-white hvr-shrink">CLICK TO VIEW</a>
+                <a href="{{ route('web.video.set.monthly') }}" class=" w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-primary fw-500 align-items-center   hvr-shrink">CLICK TO VIEW</a>
 
                </div>
             </div>

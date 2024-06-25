@@ -7,6 +7,7 @@ $(document).ready( function () {
     $('#rankTable').DataTable();
     $('#attendanceTable').DataTable();
     $('#notePaperTable').DataTable();
+    $('#orderHistoryTable').DataTable();
 });
 
 $('.fees-Carousel').owlCarousel({
@@ -56,3 +57,25 @@ $('.reviwe-teacher').owlCarousel({
     }
 });
 
+
+
+const ctx = document.getElementById('timeMgtChart');
+
+new Chart(ctx, {
+  type: 'pie',
+  data: {
+    labels: ['NO RECORD', 'SELF STUDIES', 'SCHOOL', 'TUTION CLASSES', 'EXTRA ACTIVITIES', 'SPORTS / EXCERCISE','SLEEPING'],
+    datasets: [{
+      label: '%',
+      data: [12, 8, 30, 25, 10, 5,10],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});

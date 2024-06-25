@@ -14,6 +14,10 @@ use App\Http\Controllers\Web\NoticeBoardController;
 use App\Http\Controllers\Web\OnlineExamController;
 use App\Http\Controllers\Web\StudentAttendanceController;
 use App\Http\Controllers\Web\NoteAndPaperController;
+use App\Http\Controllers\Web\LearningManagementController;
+use App\Http\Controllers\Web\ItemShopController;
+use App\Http\Controllers\Web\AnalysisReportController;
+use App\Http\Controllers\Web\TeacherSubjectController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -100,13 +104,28 @@ Route::get('/online-exam', [OnlineExamController::class, 'onlineExam'])->name('w
 Route::get('/online-exam-view', [OnlineExamController::class, 'onlineExamMonthly'])->name('web.online.view');
 
 
-
 // Student Attendance ATTENDANCE
 
 Route::get('/student-attendance', [StudentAttendanceController::class, 'studentAttendance'])->name('web.student.attendance');
 Route::get('/student-attendance-view', [StudentAttendanceController::class, 'studentAttendanceMonthly'])->name('web.student_attendance.view');
 Route::get('/student-attendance-check', [StudentAttendanceController::class, 'studentAttendanceCheck'])->name('web.student_attendance.check');
 
+// Learning Management
+Route::get('/learning-management', [LearningManagementController::class, 'learningManagement'])->name('web.learning.management');
+Route::get('/time-management', [LearningManagementController::class, 'timeManagement'])->name('web.time.management');
+Route::get('/time-management/list-table', [LearningManagementController::class, 'timeManagementTable'])->name('web.time-mgt.list-table');
+Route::get('/time-management/list-report', [LearningManagementController::class, 'timeManagementReport'])->name('web.time-mgt.list-report');
 
+
+// ItemShopController
+Route::get('/item-shop', [ItemShopController::class, 'itemShop'])->name('web.item-shop');
+Route::get('/order-history', [ItemShopController::class, 'orderHistory'])->name('web.order-history');
+
+// Analysis Report
+Route::get('/analysis-report', [AnalysisReportController::class, 'analysisReport'])->name('web.analysis.report');
+
+
+// Teacher Subject
+Route::get('/teacher-subject', [TeacherSubjectController::class, 'teacherSubject'])->name('web.teacher.subject');
 
 

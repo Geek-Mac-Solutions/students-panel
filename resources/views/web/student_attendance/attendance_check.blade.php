@@ -45,7 +45,7 @@
  
             <div class="table-responsive  ">
              <table id="attendanceTable" class="table table-striped table-hover table-bordered">
-                <thead class="text-white e gradient-background text-uppercase fw-light font-15">
+                <thead class="text-white gradient-background text-uppercase fw-light font-15">
                  
 
                       <th>07.01.2023</th>
