@@ -36,7 +36,7 @@
                 <div class="col-9">
                    <h3 class="font-20 fw-bold text-purple pb-1">Sadaru Nimesh (GNI00001)</h3>
                    <h3 class="font-17 fw-bold text-purple pb-1">Grade 6</h3>
-                   <a href="http://localhost:8000/class/view" class="hvr-shrink text-white e gradient-background-1 py-2 px-5 justify-content-around rounded-35" data-bs-toggle="modal" data-bs-target="#editProfile">
+                   <a href="http://localhost:8000/class/view" class="hvr-shrink text-white gradient-background-1 py-2 px-5 justify-content-around rounded-35" data-bs-toggle="modal" data-bs-target="#editProfile">
                    Edit Profile
                    </a>
                 </div>
@@ -118,7 +118,7 @@
         </div>
         <div class="modal-footer">
 
-          <button type="button" class="btn   text-white e gradient-background-1 py-2 px-5  ">Update Profile</button>
+          <button type="button" class="btn   text-white gradient-background-1 py-2 px-5  ">Update Profile</button>
         </div>
       </div>
     </div>
@@ -212,7 +212,7 @@
                     <input type="password" class="form-control  border-1 font-14" >
                   </div>
 
-                <button type="submit" class="btn hvr-shrink text-white e gradient-background-1 py-2 px-5 justify-content-around rounded-35 font-14 fw-500">Submit</button>
+                <button type="submit" class="btn hvr-shrink text-white gradient-background-1 py-2 px-5 justify-content-around rounded-35 font-14 fw-500">Submit</button>
               </form>
         </div>
 

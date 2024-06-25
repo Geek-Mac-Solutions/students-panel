@@ -36,8 +36,9 @@
       <!-- Owl Carousel JS CDN -->
 
       <script src="{{ asset('themes/default/js/owl.carousel.min.js') }}"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       <script src="{{ asset('themes/default/js/admin-custom.js') }}"></script>
-
+     
 
 
       <script>

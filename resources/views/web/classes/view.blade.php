@@ -49,7 +49,7 @@
 
 
 
-                     <button  class="border-0 btn-cus w-100 text-uppercase font-14 text-white e rounded-pill py-2 px-3 bg-success fw-500 align-items-center text-white e hvr-shrink   "  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                     <button  class="border-0 btn-cus w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-success fw-500 align-items-center text-white hvr-shrink   "  data-bs-toggle="modal" data-bs-target="#exampleModal">
 
 
                             CLICK TO JOIN <br>
@@ -57,14 +57,14 @@
 
 
                       </button><br><br>
-                      <button  class="border-0 btn-cus w-100 text-uppercase font-14 text-white e rounded-pill py-2 px-3 bg-danger fw-500 align-items-center text-white e hvr-shrink   "  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <button  class="border-0 btn-cus w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-danger fw-500 align-items-center text-white hvr-shrink   "  data-bs-toggle="modal" data-bs-target="#exampleModal">
                         YOU CAN’T WATCH  <br>
                         <span class="font-9">Class Fees Pending</span>
 
 
                   </button>
                   <br><br>
-                      <button  class="border-0 btn-cus w-100 text-uppercase font-14 text-white e rounded-pill py-2 px-3 bg-warning fw-500 align-items-center text-white e hvr-shrink   "  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <button  class="border-0 btn-cus w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-warning fw-500 align-items-center text-white hvr-shrink   "  data-bs-toggle="modal" data-bs-target="#exampleModal">
                         ENDED  
 
 
@@ -93,7 +93,7 @@
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
 
        </p>
-       <button type="button" class=" my-3 btn btn-secondary border-0 btn-cus 0 text-uppercase font-14 text-white e rounded-pill py-2 px-5 bg-success fw-500  float-end" data-bs-dismiss="modal">CLICK TO JOIN</button>
+       <button type="button" class=" my-3 btn btn-secondary border-0 btn-cus 0 text-uppercase font-14 text-white rounded-pill py-2 px-5 bg-success fw-500  float-end" data-bs-dismiss="modal">CLICK TO JOIN</button>
         </div>
         <div class="modal-footer py-5 border-0">
 
@@ -136,7 +136,7 @@
             <p class="font-14 fw-500 text-dark text-start">Zoom Password - - <span class="fw-bolder">8899</span></p>
             <div class="row justify-content-center pt-4">
                <div class="col-lg-10 text-white e">
-                  <p  class="btn-cus w-100 text-uppercase font-14 text-white e rounded-pill py-2 px-3 bg-success fw-500 align-items-center "><a href="" class="text-white e hvr-shrink w-100 ">
+                  <p  class="btn-cus w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-success fw-500 align-items-center "><a href="" class="text-white hvr-shrink w-100 ">
                      CLICK TO JOIN <br>
                      <span class="font-9">NEW STUDENT PASS
                      </span>
@@ -168,7 +168,7 @@
             <p class="font-14 fw-500 text-dark text-start">Zoom Password - - <span class="fw-bolder">8899</span></p>
             <div class="row justify-content-center pt-4">
                <div class="col-lg-10 text-white e">
-                  <p  class="btn-cus w-100 text-uppercase font-14 text-white e rounded-pill py-2 px-3 bg-danger fw-500 align-items-center "><a href="" class="text-white e hvr-shrink w-100 ">
+                  <p  class="btn-cus w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-danger fw-500 align-items-center "><a href="" class="text-white hvr-shrink w-100 ">
                      YOU CAN’T JOIN <br>
                      <span class="font-9">HAVE TO PAY CLASS FEES
                      </span>
@@ -200,7 +200,7 @@
             <p class="font-14 fw-500 text-dark text-start">Zoom Password - - <span class="fw-bolder">8899</span></p>
             <div class="row justify-content-center pt-4">
                <div class="col-lg-10 text-white e">
-                  <p  class="btn-cus w-100 text-uppercase font-14 text-white e rounded-pill py-2 px-3 bg-success fw-500 align-items-center "><a href="" class="text-white e hvr-shrink w-100 ">
+                  <p  class="btn-cus w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-success fw-500 align-items-center "><a href="" class="text-white hvr-shrink w-100 ">
                      CLICK TO JOIN <br>
                      </a>
                   </p>
@@ -230,7 +230,7 @@
             <p class="font-14 fw-500 text-dark text-start">Zoom Password - - <span class="fw-bolder">8899</span></p>
             <div class="row justify-content-center pt-4">
                <div class="col-lg-10 text-white e">
-                  <p  class="btn-cus w-100 text-uppercase font-14 text-white e rounded-pill py-2 px-3 bg-warning fw-500 align-items-center "><a href="" class="text-white e hvr-shrink w-100 ">
+                  <p  class="btn-cus w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-warning fw-500 align-items-center "><a href="" class="text-white hvr-shrink w-100 ">
                      Ended <br>
                      </a>
                   </p>
@@ -260,7 +260,7 @@
             <p class="font-14 fw-500 text-dark text-start">Zoom Password - - <span class="fw-bolder">8899</span></p>
             <div class="row justify-content-center pt-4">
                <div class="col-lg-10 text-white e">
-                  <p  class="btn-cus w-100 text-uppercase font-14 text-white e rounded-pill py-2 px-3 bg-warning fw-500 align-items-center "><a href="" class="text-white e hvr-shrink w-100 ">
+                  <p  class="btn-cus w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-warning fw-500 align-items-center "><a href="" class="text-white hvr-shrink w-100 ">
                      Holiday <br>
                      </a>
                   </p>
@@ -290,7 +290,7 @@
             <p class="font-14 fw-500 text-dark text-start">Zoom Password - - <span class="fw-bolder">8899</span></p>
             <div class="row justify-content-center pt-4">
                <div class="col-lg-10 text-white e">
-                  <p  class="btn-cus w-100 text-uppercase font-14 text-white e rounded-pill py-2 px-3 bg-warning fw-500 align-items-center "><a href="" class="text-white e hvr-shrink w-100 ">
+                  <p  class="btn-cus w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-warning fw-500 align-items-center "><a href="" class="text-white hvr-shrink w-100 ">
                      Still Not Scheduled
                      <br>
                      </a>
@@ -321,7 +321,7 @@
             <p class="font-14 fw-500 text-dark text-start">Zoom Password - - <span class="fw-bolder">8899</span></p>
             <div class="row justify-content-center pt-4">
                <div class="col-lg-10 text-white e">
-                  <p  class="btn-cus w-100 text-uppercase font-14 text-white e rounded-pill py-2 px-3 bg-warning fw-500 align-items-center "><a href="" class="text-white e hvr-shrink w-100 ">
+                  <p  class="btn-cus w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-warning fw-500 align-items-center "><a href="" class="text-white hvr-shrink w-100 ">
                      Postponed
                      <br>
                      </a>

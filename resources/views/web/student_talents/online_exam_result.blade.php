@@ -27,7 +27,7 @@
          </div>
          <div class="table-responsive">
             <table id="onlinTestResultTable" class="table table-striped table-hover table-bordered">
-               <thead class="text-white e gradient-background text-uppercase fw-light font-15">
+               <thead class="text-white gradient-background text-uppercase fw-light font-15">
                   <tr>
                      <th>MONTH</th>
                      <th>SUBJECT</th>
@@ -48,7 +48,7 @@
                        
                         <span class="text-center"> 05 </span>
                         <p>
-                           <a  class="  text-uppercase text-center font-10 text-white e rounded-pill py-1 px-3 bg-success fw-bolder align-items-center text-white e hvr-shrink   "  data-bs-toggle="modal" data-bs-target="#resultRank">  View </a>
+                           <a  class="  text-uppercase text-center font-10 text-white rounded-pill py-1 px-3 bg-success fw-bolder align-items-center text-white hvr-shrink   "  data-bs-toggle="modal" data-bs-target="#resultRank">  View </a>
                         </p>
  
 
@@ -80,7 +80,7 @@
                 <div class="col-lg-11">
 
              <table id="rankTable" class="table table-striped table-hover table-bordered text-start">
-                <thead class="text-white e gradient-background text-uppercase fw-light font-15">
+                <thead class="text-white gradient-background text-uppercase fw-light font-15">
                    <tr>
                       <th>RANK</th>
                       <th>STUDENT NAME</th>
@@ -94,7 +94,7 @@
                       <td>1</td>
                       <td>PATHUM SHANAKA
                     </td>
-                      <td><p class="py-2 px-4 bg-success text-white e font-13 text-center rounded-pill">
+                      <td><p class="py-2 px-4 bg-success text-white font-13 text-center rounded-pill">
                         95</p></td>
                       
                    </tr>
@@ -115,7 +115,7 @@
                      
                     
                      <td>
-                        <a href="{{  route('web.paper.answer') }}" class="w-100 text-uppercase text-center font-12 text-white e rounded-pill py-2 px-3 bg-success fw-bolder align-items-center text-white e hvr-shrink   "   >
+                        <a href="{{  route('web.paper.answer') }}" class="w-100 text-uppercase text-center font-12 text-white rounded-pill py-2 px-3 bg-success fw-bolder align-items-center text-white hvr-shrink   "   >
                        <i class="fa-solid fa-eye"></i> View More
                         </a>
                      </td>

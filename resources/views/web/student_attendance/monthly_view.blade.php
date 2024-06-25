@@ -43,7 +43,7 @@
 
 
 
-                <a href="{{ route('web.student_attendance.check') }}" class=" w-100 text-uppercase font-14 text-white e rounded-pill py-2 px-3 bg-primary fw-500 align-items-center text-white e hvr-shrink">CLICK TO Check</a>
+                <a href="{{ route('web.student_attendance.check') }}" class=" w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-primary fw-500 align-items-center   hvr-shrink">CLICK TO Check</a>
 
                </div>
             </div>

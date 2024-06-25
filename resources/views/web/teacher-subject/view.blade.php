@@ -9,11 +9,10 @@
          </a>
       </div>
       <div class="col-lg-6 col-sm-6 text-center">
-         <h1 class="font-36 fw-bold text-uppercase text-purple">VIDEO RECORDINGS
+         <h1 class="font-36 fw-bold text-uppercase text-purple"> TEACHERS AND NEW SUBJECTS
 
          </h1>
-         <p class="font-20 fw-500 text-purple">SCIENCE - THEORY - ENGLISH MEDIUM - ABHIMAN SIR
-
+         <p class="font-20 fw-500 text-purple">GRADE 6
          </p>
       </div>
 
@@ -27,7 +26,7 @@
                     </button>
                     </form>
             </div>
-            
+
           </div>
      </div>
    </div>
@@ -36,42 +35,29 @@
    <div class="row middle-hight">
       <div  class="col-lg-3 col-sm-4 mb-3 align-items-center">
          <div class="border-new pt-3 pb-5 px-3 rounded-35 bg-white text-center">
-           
             <div class="row justify-content-center pt-2 pb-3">
-               <div class="col-12">
-                  <img class="d-block w-100 rounded-3" src="{{asset('themes/default/img/hq720.jpg')}}"
+               <div class="col-6">
+                  <img class="d-block w-100 rounded-circle" src="{{asset('themes/default/img/place-holder.png')}}"
                      alt="Guru Niwasa LMS">
                </div>
             </div>
-            <p class="font-14 fw-500 text-dark text-start">Class Date - <span class="fw-bolder">2023.01.07</span></p>
-            <p class="font-14 fw-500 text-dark text-start">Topic - <span class="fw-bolder">   Science Theory | English Medium |
-                Abhiman Sir
-               </span>
-            </p>
-            <p class="font-14 fw-500 text-dark text-start">Subject - <span class="fw-bolder"> Grade 6 - Unit 03 - Bio Diversity - Part 1 -
-                2023.01.07
-               </span>
-            </p>
 
-            <p class="font-14 fw-500 text-dark text-start">Grade - <span class="fw-bolder">Grade 6
-            </span></p>
+
+            <p class="font-14 fw-500 text-dark text-start">Grade - <span class="fw-bolder">Grade 6</span></p>
+            <p class="font-14 fw-500 text-dark text-start">Subject - <span class="fw-bolder"> Mathematics Theory | English
+               Medium | Shehan Sir
+               </span>
+            </p>
+            <p class="font-12 fw-500 text-dark text-start"> (CLASS DAY AND TIME)
+            </p>
             <div class="row justify-content-center pt-4">
                <div class="col-lg-10 text-white e">
-
-                <a href="https://www.youtube.com/watch?v=tQTfF4FRA2k&list=PLMrrM6QnSnHwCdEQ7IAgFe0WDn21Dua5T" class=" w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-success fw-500 align-items-center text-white hvr-shrink" target="_blank"> Click to watch</a>
-
-                   
-
+                  <a href="{{ route('web.review.teacher') }}" class=" w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-primary fw-500 align-items-center   hvr-shrink">RATE YOUR TEACHER
+                </a>
                </div>
             </div>
          </div>
       </div>
-
-
- 
-
-
- 
    </div>
 </div>
 @endsection

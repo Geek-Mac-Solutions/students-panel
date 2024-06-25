@@ -29,20 +29,20 @@
 
             <div class="col-lg-4 text-lg-end text-sm-end text-center">
 
-                <a class="social-button1 text-white e hvr-wobble-bottom" href=" " target="_blank">
+                <a class="social-button1 text-white hvr-wobble-bottom" href=" " target="_blank">
                     <i class="fab  fa-youtube font-14"></i>
                 </a>
-                <a class="social-button1 text-white e hvr-wobble-bottom" href="" target="_blank">
+                <a class="social-button1 text-white hvr-wobble-bottom" href="" target="_blank">
                     <i class="fab fa-facebook font-14"></i>
                 </a>
-                <a class="social-button1 text-white e hvr-wobble-bottom" href=" " target="_blank">
+                <a class="social-button1 text-white hvr-wobble-bottom" href=" " target="_blank">
                     <i class="fab  fa-whatsapp font-14"></i>
                 </a>
-                <a class="social-button1 text-white e hvr-wobble-bottom" href=" " target="_blank">
+                <a class="social-button1 text-white hvr-wobble-bottom" href=" " target="_blank">
                     <i class="fab  fa-instagram font-14"></i>
                 </a>
 
-                <a class="social-button1 text-white e hvr-wobble-bottom" href=" " target="_blank">
+                <a class="social-button1 text-white hvr-wobble-bottom" href=" " target="_blank">
                     <i class="fab  fa-tiktok font-14"></i>
                 </a>
 
