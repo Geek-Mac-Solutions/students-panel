@@ -64,7 +64,7 @@ use Carbon\Carbon;
                </p>
                <div class="row justify-content-center pt-2">
                   <div class="col-lg-10 text-white e">
-                     <a href="{{ route('web.paper.open') }}" class=" w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-primary fw-500 align-items-center   hvr-shrink">See More</a>
+                     <a href="{{ route('web.single-item') }}" class=" w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-primary fw-500 align-items-center   hvr-shrink">See More</a>
                   </div>
                </div>
             </div>
@@ -84,7 +84,7 @@ use Carbon\Carbon;
                </p>
                <div class="row justify-content-center pt-2">
                   <div class="col-lg-10 text-white e">
-                     <a href="{{ route('web.paper.open') }}" class=" w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-primary fw-500 align-items-center   hvr-shrink">See More</a>
+                     <a href="{{ route('web.single-item') }}" class=" w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-primary fw-500 align-items-center   hvr-shrink">See More</a>
                   </div>
                </div>
             </div>
@@ -104,7 +104,7 @@ use Carbon\Carbon;
                </p>
                <div class="row justify-content-center pt-2">
                   <div class="col-lg-10 text-white e">
-                     <a href="{{ route('web.paper.open') }}" class=" w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-primary fw-500 align-items-center   hvr-shrink">See More</a>
+                     <a href="{{ route('web.single-item') }}" class=" w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-primary fw-500 align-items-center   hvr-shrink">See More</a>
                   </div>
                </div>
             </div>
