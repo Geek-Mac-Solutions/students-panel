@@ -33,5 +33,17 @@ class ItemShopController extends Controller
     }
 
     
+    public function singleItem()
+    {
+        try{
+
+            return view('web.item-shop.single-item');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+
 
 }

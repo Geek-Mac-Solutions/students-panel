@@ -380,8 +380,69 @@ a:hover,
 
 
 
+#sync2 .owl-nav.disabled {
+    display:  block !important;
+}
 
+#sync2 .owl-nav span {
+    display:  none !important;
+}
+#sync2 .owl-next::before {
+    display: inline-block;
+    font-family: fontawesome;
+    content: '\f054';
+    font-size: 24px;
+    transition: .5s ease-in-out;
+    color: #374550;
+    position: absolute;
+    right: -1em;
+    top: 2em;
+    font-weight: 100;
+}
 
+#sync2 .owl-prev::before {
+    display: inline-block;
+    font-family: fontawesome;
+    content: '\f053';
+    font-size: 24px;
+    transition: .5s ease-in-out;
+    color: #374550;
+    position: absolute;
+    left: -1em;
+    top: 2em;
+    font-weight: 100;
+}
+
+.quantity-widget {
+    display: flex;
+    align-items: center;
+ 
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.quantity-widget button {
+    background-color: #005c32;
+    color: #fff;
+    border: none;
+    padding: 3px 20px;
+    cursor: pointer;
+    font-size: 27px;
+}
+
+.quantity-widget button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.quantity-widget input {
+    width: 50px;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    margin: 0;
+    padding: 10px 0;
+}
 @media only screen and (max-width: 600px) {
 
 

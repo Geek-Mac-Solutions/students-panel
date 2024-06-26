@@ -123,7 +123,7 @@ use Carbon\Carbon;
         </div>
 
         <div class="col-lg-3 col-10 text-center pt-4">
-            <a href="{{ route('web.video.monthly') }}" class=" w-100 text-uppercase font-15  rounded-pill p-3 bg-info fw-500 align-items-center text-dark hvr-shrink">Add New Subject
+            <a href="{{ route('web.teacher.subject') }}" class=" w-100 text-uppercase font-15  rounded-pill p-3 bg-info fw-500 align-items-center text-dark hvr-shrink">Add New Subject
             </a>
         </div>
       </div>
