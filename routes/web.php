@@ -121,6 +121,10 @@ Route::get('/time-management/list-report', [LearningManagementController::class,
 Route::get('/item-shop', [ItemShopController::class, 'itemShop'])->name('web.item-shop');
 Route::get('/single-item', [ItemShopController::class, 'singleItem'])->name('web.single-item');
 Route::get('/order-history', [ItemShopController::class, 'orderHistory'])->name('web.order-history');
+Route::get('/order-cart', [ItemShopController::class, 'orderCart'])->name('web.order-cart');
+
+
+
 
 // Analysis Report
 Route::get('/analysis-report', [AnalysisReportController::class, 'analysisReport'])->name('web.analysis.report');

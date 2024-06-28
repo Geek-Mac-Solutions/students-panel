@@ -11,7 +11,7 @@ use Carbon\Carbon;
       BACK TO HOME
       </a>
       <p class="pt-3">
-         <a href="" class="py-2 px-4 font-14 fw-bolder text-white hvr-grow rounded-pill  bg-warning">
+         <a href="{{ route('web.order-cart')}}" class="py-2 px-4 font-14 fw-bolder text-white hvr-grow rounded-pill  bg-warning">
          <i class="fa-solid fa-cart-shopping me-2"></i>  View Cart
          </a>
          <a href="{{ route('web.order-history')}}" class="ms-lg-3 mt-sm-2 hvr-grow py-2 px-4 font-14 fw-bolder text-white  rounded-pill  bg-secondary">
@@ -29,7 +29,7 @@ use Carbon\Carbon;
 <div class="container-fluid py-lg-5 py-3 px-lg-5 ">
    <div class="container">
       <div class="row middle-hight justify-content-center align-items-center">
-         <div class="col-lg-4 border border-info border-2 pt-4 px-5 rounded-3 bd-blue-100">
+         <div class="col-lg-4 col-sm-6  border border-info border-2 pt-4 px-5 rounded-3 bd-blue-100">
             <div id="sync1" class="owl-carousel ">
                <div class="item">
                   <div class="row justify-content-center">
@@ -64,7 +64,7 @@ use Carbon\Carbon;
             </div>
          </div>
          <div class="col-lg-1"></div>
-         <div class="col-lg-3">
+         <div class="col-lg-3 pt-lg-0 pt-3">
             <p class="font-16 fw-bolder text-dark pb-2">Grade 6 Science - Provincial Past Papers -
                 English Medium
             </p>

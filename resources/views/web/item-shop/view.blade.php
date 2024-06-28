@@ -11,7 +11,7 @@ use Carbon\Carbon;
       BACK TO HOME
       </a>
       <p class="pt-3">
-         <a href="" class="py-2 px-4 font-14 fw-bolder text-white hvr-grow rounded-pill  bg-warning">
+         <a href="{{ route('web.order-cart')}}" class="py-2 px-4 font-14 fw-bolder text-white hvr-grow rounded-pill  bg-warning">
          <i class="fa-solid fa-cart-shopping me-2"></i>  View Cart
          </a>
          <a href="{{ route('web.order-history')}}" class="ms-lg-3 mt-sm-2 hvr-grow py-2 px-4 font-14 fw-bolder text-white  rounded-pill  bg-secondary">
