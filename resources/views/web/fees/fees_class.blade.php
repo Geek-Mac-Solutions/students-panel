@@ -22,7 +22,7 @@ use Carbon\Carbon;
       <div class="col-12">
          <div class="row justify-content-end">
             <div class="col-lg-2 text-center pb-3">
-               <a href="{{ route('web.video.set.monthly') }}"
+               <a href="{{ route('web.order-cart')}}"
                   class=" w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-success fw-500 align-items-center text-white hvr-shrink"><i
                   class="fa-solid fa-cart-shopping me-2"></i> View CART
                </a>

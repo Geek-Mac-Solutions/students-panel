@@ -32,7 +32,7 @@ class ItemShopController extends Controller
         }
     }
 
-    
+
     public function singleItem()
     {
         try{
@@ -44,6 +44,29 @@ class ItemShopController extends Controller
             return;
         }
     }
+
+
+    public function orderCart()
+    {
+        try{
+
+            return view('web.item-shop.order-cart');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 }
