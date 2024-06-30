@@ -25,7 +25,7 @@ use Carbon\Carbon;
          
          <div class="table-responsive  ">
             <table id="orderHistoryTable" class="table table-striped table-hover table-bordered">
-               <thead class="text-white gradient-background text-uppercase fw-light font-15">
+               <thead class="text-white gradient-background text-uppercase fw-light font-14">
                   <th>Payment Date</th>
                   <th>Item</th>
                   <th>Order Type</th>

@@ -33,7 +33,7 @@
        <div class="col-12">
 
         <div class="row justify-content-end">
-            <div class="col-3 text-end">
+            <div class="col-lg-3 text-end">
                 <i class="fa-solid fa-file-excel fs-2 text-success mb-2 hvr-grow"></i>
                <span class=" text-uppercase font-13 fw-bold text-dark"> Download excel</span>
             </div>
@@ -45,7 +45,7 @@
 
           <div class="table-responsive">
             <table id="videoRecTable" class="table table-striped table-hover table-bordered">
-               <thead class="text-white gradient-background text-uppercase fw-light font-15">
+               <thead class="text-white gradient-background text-uppercase fw-light font-14">
                   <tr>
                      <th>MONTH</th>
                      <th>CLASS  Date</th>

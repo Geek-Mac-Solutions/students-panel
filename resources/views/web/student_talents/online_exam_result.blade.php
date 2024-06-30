@@ -20,14 +20,14 @@
    <div class="row middle-hight">
       <div class="col-12">
          <div class="row justify-content-end">
-            <div class="col-3 text-end">
+            <div class="col-lg-3 text-end">
                <i class="fa-solid fa-file-excel fs-2 text-success mb-2 hvr-grow"></i>
                <span class=" text-uppercase font-13 fw-bold text-dark"> Download excel</span>
             </div>
          </div>
          <div class="table-responsive">
             <table id="onlinTestResultTable" class="table table-striped table-hover table-bordered">
-               <thead class="text-white gradient-background text-uppercase fw-light font-15">
+               <thead class="text-white gradient-background text-uppercase fw-light font-14">
                   <tr>
                      <th>MONTH</th>
                      <th>SUBJECT</th>
@@ -43,17 +43,17 @@
                      <td>Grade 6 - Science Theory  - Abhiman Sir </td>
                      <td>MONTHLY TEST</td>
                      <td>95</td>
-                   
+
                      <td  >
-                       
+
                         <span class="text-center"> 05 </span>
                         <p>
                            <a  class="  text-uppercase text-center font-10 text-white rounded-pill py-1 px-3 bg-success fw-bolder align-items-center text-white hvr-shrink   "  data-bs-toggle="modal" data-bs-target="#resultRank">  View </a>
                         </p>
- 
+
 
   <!-- Modal -->
-  <div class="modal fade" id="resultRank" tabindex="-1" aria-labelledby="tableModalLabel" aria-hidden="true">
+  <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="resultRank" tabindex="-1" aria-labelledby="tableModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
@@ -80,12 +80,12 @@
                 <div class="col-lg-11">
 
              <table id="rankTable" class="table table-striped table-hover table-bordered text-start">
-                <thead class="text-white gradient-background text-uppercase fw-light font-15">
+                <thead class="text-white gradient-background text-uppercase fw-light font-14">
                    <tr>
                       <th>RANK</th>
                       <th>STUDENT NAME</th>
                       <th>MARKS (100)</th>
-                        
+
 
                    </tr>
                 </thead>
@@ -96,14 +96,14 @@
                     </td>
                       <td><p class="py-2 px-4 bg-success text-white font-13 text-center rounded-pill">
                         95</p></td>
-                      
+
                    </tr>
                 </tbody>
              </table>
             </div>
         </div>
         </div>
-         
+
       </div>
     </div>
   </div>
@@ -112,8 +112,8 @@
 
 
 
-                     
-                    
+
+
                      <td>
                         <a href="{{  route('web.paper.answer') }}" class="w-100 text-uppercase text-center font-12 text-white rounded-pill py-2 px-3 bg-success fw-bolder align-items-center text-white hvr-shrink   "   >
                        <i class="fa-solid fa-eye"></i> View More

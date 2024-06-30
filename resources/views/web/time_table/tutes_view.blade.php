@@ -39,7 +39,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="englishTimeTable" tabindex="-1" aria-labelledby="englishTimeTable" aria-hidden="true">
+<div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="englishTimeTable" tabindex="-1" aria-labelledby="englishTimeTable" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
@@ -50,14 +50,14 @@
             <img class="d-block w-100  " src="{{asset('themes/default/img/time-table.png')}}"
             alt="Guru Niwasa LMS">
 
-          
+
         </div>
-        
+
       </div>
     </div>
   </div>
 
-                    
+
 
 
 
@@ -72,7 +72,7 @@
 
 
                     <!-- Modal -->
-<div class="modal fade" id="sinhalaTimeTable" tabindex="-1" aria-labelledby="sinhalaTimeTable" aria-hidden="true">
+<div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="sinhalaTimeTable" tabindex="-1" aria-labelledby="sinhalaTimeTable" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
@@ -83,9 +83,9 @@
             <img class="d-block w-100  " src="{{asset('themes/default/img/time-table.png')}}"
             alt="Guru Niwasa LMS">
 
-          
+
         </div>
-        
+
       </div>
     </div>
   </div>

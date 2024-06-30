@@ -1,4 +1,4 @@
-<div class="container-fluid py-2 bg-light1">
+<div class="container-fluid py-2 bg-light1 {{!isset($homeHeader) ? 'non_homePage':'homePage'}}">
     <div class="row justify-content-end align-items-center">
         <div class="col-lg-4 text-lg-end text-center">
 

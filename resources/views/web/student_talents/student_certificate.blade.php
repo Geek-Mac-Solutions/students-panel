@@ -40,20 +40,20 @@
 
 
             <!-- Modal -->
-<div class="modal fade" id="uploadCertificate" tabindex="-1" aria-labelledby="uploadCertificate" aria-hidden="true">
+<div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="uploadCertificate" tabindex="-1" aria-labelledby="uploadCertificate" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <form action="">
         <div class="modal-body">
-       
+
             <div class="mb-3">
                 <label for="formFileMultiple" class="form-label font-20  fw-bolder text-purple">Multiple Certificate  files  </label>
                 <input class="form-control font-14 fw-500 text-dark" type="file" id="formFileMultiple" multiple>
               </div>
-        
+
         </div>
         <div class="modal-footer">
-          
+
           <button type="button" class="btn text-uppercase font-14 text-white rounded-pill py-2 px-4 bg-primary fw-500 align-items-center text-white hvr-shrink">Submit</button>
         </div>
     </form>
@@ -92,7 +92,7 @@
            </div>
         </div>
      </div>
-     
+
    </div>
 </div>
 @endsection

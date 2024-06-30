@@ -18,6 +18,7 @@ use App\Http\Controllers\Web\LearningManagementController;
 use App\Http\Controllers\Web\ItemShopController;
 use App\Http\Controllers\Web\AnalysisReportController;
 use App\Http\Controllers\Web\TeacherSubjectController;
+use App\Http\Controllers\Web\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,6 +31,23 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+
+
+
+// AuthController
+Route::get('/home', [AuthController::class, 'homeView'])->name('web.home');
+Route::get('/login', [AuthController::class, 'loginView'])->name('web.login');
+Route::get('/register', [AuthController::class, 'registerView'])->name('web.register');
+Route::get('/forgot_password', [AuthController::class, 'forgotPassword'])->name('web.forgot_password');
+
+
+
+
+
+
+
+
 Route::get('/', [HomeController::class, 'index'])->name('web.home');
 // LIVE CLASSES
 Route::get('/class/view', [ClassController::class, 'classView'])->name('web.class.view');
@@ -46,7 +64,8 @@ Route::get('/video/subject/view-list', [VideoController::class, 'videoSubjectLis
 // Fees
 Route::get('/fees/view', [FeesController::class, 'feesView'])->name('web.fees.view');
 Route::get('/fees/class', [FeesController::class, 'feesClass'])->name('web.fees.class');
-
+Route::get('/fees/subject-cart', [FeesController::class, 'subjectCart'])->name('web.fees.subject_cart');
+Route::get('/subject-cart', [FeesController::class, 'subjectCart'])->name('web.subject-cart');
 
 
 // PaymentHistory
@@ -93,6 +112,8 @@ Route::get('/talent-videos-lesson', [StudentTalentController::class, 'talentVide
 Route::get('/my-talent-videos', [StudentTalentController::class, 'myTalentVideos'])->name('web.my_talent');
 Route::get('/other-talent-videos', [StudentTalentController::class, 'otherTalentVideos'])->name('web.other_talent');
 Route::get('/review-teacher', [StudentTalentController::class, 'reviweTeacher'])->name('web.review.teacher');
+Route::get('/term-test', [StudentTalentController::class, 'termTest'])->name('web.term.test');
+
 
 
 // NoticeBoardController
@@ -115,13 +136,14 @@ Route::get('/learning-management', [LearningManagementController::class, 'learni
 Route::get('/time-management', [LearningManagementController::class, 'timeManagement'])->name('web.time.management');
 Route::get('/time-management/list-table', [LearningManagementController::class, 'timeManagementTable'])->name('web.time-mgt.list-table');
 Route::get('/time-management/list-report', [LearningManagementController::class, 'timeManagementReport'])->name('web.time-mgt.list-report');
+Route::get('/time-management/revising-plane', [LearningManagementController::class, 'revisingPlane'])->name('web.revising.plane');
 
 
 // ItemShopController
 Route::get('/item-shop', [ItemShopController::class, 'itemShop'])->name('web.item-shop');
 Route::get('/single-item', [ItemShopController::class, 'singleItem'])->name('web.single-item');
 Route::get('/order-history', [ItemShopController::class, 'orderHistory'])->name('web.order-history');
-Route::get('/order-cart', [ItemShopController::class, 'orderCart'])->name('web.order-cart');
+
 
 
 
@@ -132,5 +154,7 @@ Route::get('/analysis-report', [AnalysisReportController::class, 'analysisReport
 
 // Teacher Subject
 Route::get('/teacher-subject', [TeacherSubjectController::class, 'teacherSubject'])->name('web.teacher.subject');
+Route::get('/request-subject',[TeacherSubjectController::class, 'requestSubject'])->name('web.teacher.request-subject');
+
 
 

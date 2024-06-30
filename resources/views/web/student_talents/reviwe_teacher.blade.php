@@ -51,7 +51,7 @@
             <div class="mb-2">
                 <label class="form-label font-14 fw-bold text-purple  mb-0">Select Your Teacher
                 </label>
-                
+
                 <select class="form-select font-13  fw-500 rounded-0 border-dark" aria-label="Default select example">
                     <option selected>Select Teacher</option>
                     <option value="1">Teacher 01- Subject</option>
@@ -73,7 +73,7 @@
             <div class="mb-2">
                <label class="form-label font-14 fw-bold text-purple  mb-0">Enter your review here
                </label>
-               <textarea class="form-control fw-500 rounded-0 border-dark" rows="7"></textarea>
+               <textarea class="form-control fw-500 rounded-3 border-dark" rows="7"></textarea>
 
             </div>
             <div class="pt-2">

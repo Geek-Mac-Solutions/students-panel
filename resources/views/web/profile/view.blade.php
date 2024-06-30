@@ -48,7 +48,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="editProfile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="editProfile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <div class="modal-header">
@@ -62,37 +62,37 @@
 
                 <div class="mb-2">
                     <label   class="form-label font-14 fw-bold text-purple  mb-0">User ID </label>
-                    <input type="text" class="form-control fw-500 rounded-0 border-dark"  >
+                    <input type="text" class="form-control fw-500 rounded-3 border-dark"  >
                   </div>
                 <div class="mb-2">
                     <label   class="form-label font-14 fw-bold text-purple  mb-0">Name </label>
-                    <input type="text" class="form-control fw-500 rounded-0 border-dark"  >
+                    <input type="text" class="form-control fw-500 rounded-3 border-dark"  >
                   </div>
 
                 <div class="mb-2">
                     <label   class="form-label font-14 fw-bold text-purple  mb-0">Grade </label>
-                    <input type="text" class="form-control fw-500 rounded-0 border-dark"  >
+                    <input type="text" class="form-control fw-500 rounded-3 border-dark"  >
                   </div>
 
                 <div class="mb-2">
                     <label   class="form-label font-14 fw-bold text-purple  mb-0">Subjects </label>
-                    <input type="text" class="form-control fw-500 rounded-0 border-dark"  >
+                    <input type="text" class="form-control fw-500 rounded-3 border-dark"  >
                   </div>
                 <div class="mb-2">
                     <label   class="form-label font-14 fw-bold text-purple  mb-0">School </label>
-                    <input type="text" class="form-control fw-500 rounded-0 border-dark"  >
+                    <input type="text" class="form-control fw-500 rounded-3 border-dark"  >
                   </div>
             </div>
             <div class="col-lg-6">
                 <div class="mb-2">
                     <label   class="form-label font-14 fw-bold text-purple mb-0">Address </label>
-                    <input type="text" class="form-control fw-500 rounded-0 border-dark"  >
+                    <input type="text" class="form-control fw-500 rounded-3 border-dark"  >
                   </div>
 
                   <div class="mb-2">
                     <label   class="form-label font-14 fw-bold text-purple  mb-0">District </label>
 
-                    <select class="form-select fw-500 rounded-0 border-dark" aria-label="Default select example">
+                    <select class="form-select fw-500 rounded-3 border-dark" aria-label="Default select example">
                         <option selected>Select District</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -101,15 +101,15 @@
                   </div>
                   <div class="mb-2">
                     <label   class="form-label font-14 fw-bold text-purple  mb-0">Town </label>
-                    <input type="text" class="form-control fw-500 rounded-0 border-dark"  >
+                    <input type="text" class="form-control fw-500 rounded-3 border-dark"  >
                   </div>
                   <div class="mb-2">
                     <label   class="form-label font-14 fw-bold text-purple  mb-0">Contact No </label>
-                    <input type="text" class="form-control fw-500 rounded-0 border-dark"  >
+                    <input type="text" class="form-control fw-500 rounded-3 border-dark"  >
                   </div>
                   <div class="mb-2">
                     <label   class="form-label font-14 fw-bold text-purple  mb-0">Parent Contact No </label>
-                    <input type="text" class="form-control fw-500 rounded-0 border-dark"  >
+                    <input type="text" class="form-control fw-500 rounded-3 border-dark"  >
                   </div>
 
 
@@ -148,7 +148,13 @@
              <b>Grade 6</b>
         </p>
         <p class="font-18 fw-500 text-purple pb-2">Subjects -
-             <b> CLICK TO VIEW AND EDIT SUBJECTS</b>
+
+             <a href="{{ route('web.teacher.subject')}}" class="font-14 text-dark text-decoration-underline">
+                <b> CLICK TO VIEW AND EDIT SUBJECTS</b>
+             </a>
+
+
+
         </p>
 
         <p class="font-18 fw-500 text-purple pb-2">School -
@@ -189,7 +195,7 @@
 
 
 
-<div class="modal fade" id="changePassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="changePassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">

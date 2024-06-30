@@ -24,7 +24,7 @@
             <div class="col-6 ">
                <p class="font-20 fw-bolder text-purple">TOTAL MARKS - 85</p>
             </div>
-            <div class="col-3 text-end">
+            <div class="col-lg-3 text-end">
                <i class="fa-solid fa-file-excel fs-2 text-success mb-2 hvr-grow"></i>
                <span class=" text-uppercase font-13 fw-bold text-dark"> Download excel</span>
             </div>
@@ -50,6 +50,11 @@
                         </div>
                         <div class="col-1">
                         </div>
+                        <div class="col-10 pt-2">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+                              </div>
+                           </div>
                      </div>
                   </div>
                   <div class="col-lg-6 pb-2">
@@ -64,7 +69,13 @@
                         </div>
                         <div class="col-1">
                         </div>
+                        <div class="col-10 pt-2">
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                              </div>
+                           </div>
                      </div>
+                     
                   </div>
                   <div class="col-lg-6 pb-2">
                     <div class="row align-items-center">
@@ -77,6 +88,11 @@
                           <i class="fa-solid fa-circle-check text-success fs-4"></i>
                        </div>
                        <div class="col-1">
+                       </div>
+                       <div class="col-10 pt-2">
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                          </div>
                        </div>
                     </div>
                  </div>
@@ -92,11 +108,17 @@
                        </div>
                        <div class="col-1">
                        </div>
+
+                       <div class="col-10 pt-2">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+                          </div>
+                       </div>
                     </div>
                  </div>
                </div>
 
-
+ 
 
                <div class="row justify-content-end">
                 <div class="col-2 text-center">

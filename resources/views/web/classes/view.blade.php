@@ -65,7 +65,7 @@
                   </button>
                   <br><br>
                       <button  class="border-0 btn-cus w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-warning fw-500 align-items-center text-white hvr-shrink   "  data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        ENDED  
+                        ENDED
 
 
                   </button>
@@ -81,7 +81,7 @@
 
 
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered ">
       <div class="modal-content border-new1 bg-danger">
         <div class="modal-header">

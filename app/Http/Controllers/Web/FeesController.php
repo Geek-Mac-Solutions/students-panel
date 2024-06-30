@@ -30,6 +30,18 @@ class FeesController extends Controller
         }
     }
 
+    public function subjectCart()
+    {
+        try{
+
+            return view('web.fees.subject_cart');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+
 
     
 }

@@ -46,7 +46,7 @@ use Carbon\Carbon;
                               <label for="studentName" class="form-label font-14 fw-bold text-purple  mb-0 ">Student Name</label>
                            </div>
                            <div class="col-lg-9">
-                              <input type="text" class="form-control fw-500 rounded-0 border-dark text-dark" id="studentName" placeholder="Enter student name">
+                              <input type="text" class="form-control fw-500 rounded-3 border-dark text-dark" id="studentName" placeholder="Enter student name">
                            </div>
                         </div>
                      </div>
@@ -58,7 +58,7 @@ use Carbon\Carbon;
                               <label for="studentName" class="form-label font-14 fw-bold text-purple  mb-0 ">Grade</label>
                            </div>
                            <div class="col-lg-9">
-                              <input type="text" class="form-control fw-500 rounded-0 border-dark text-dark" id="" placeholder="Enter grade">
+                              <input type="text" class="form-control fw-500 rounded-3 border-dark text-dark" id="" placeholder="Enter grade">
                            </div>
                         </div>
                      </div>
@@ -70,7 +70,7 @@ use Carbon\Carbon;
                               <label for="studentName" class="form-label font-14 fw-bold text-purple  mb-0 ">Address</label>
                            </div>
                            <div class="col-lg-9">
-                              <input type="text" class="form-control fw-500 rounded-0 border-dark text-dark" id="" placeholder="Enter address">
+                              <input type="text" class="form-control fw-500 rounded-3 border-dark text-dark" id="" placeholder="Enter address">
                            </div>
                         </div>
                      </div>
@@ -112,7 +112,7 @@ use Carbon\Carbon;
                               <label for="studentName" class="form-label font-14 fw-bold text-purple  mb-0 ">Phone  01</label>
                            </div>
                            <div class="col-lg-9">
-                              <input type="text" class="form-control fw-500 rounded-0 border-dark text-dark" id="" placeholder="Enter phone numbers 01">
+                              <input type="text" class="form-control fw-500 rounded-3 border-dark text-dark" id="" placeholder="Enter phone numbers 01">
                            </div>
                         </div>
                      </div>
@@ -124,7 +124,7 @@ use Carbon\Carbon;
                               <label for="studentName" class="form-label font-14 fw-bold text-purple  mb-0 ">Phone  02</label>
                            </div>
                            <div class="col-lg-9">
-                              <input type="text" class="form-control fw-500 rounded-0 border-dark text-dark" id="" placeholder="Enter phone numbers 02">
+                              <input type="text" class="form-control fw-500 rounded-3 border-dark text-dark" id="" placeholder="Enter phone numbers 02">
                            </div>
                         </div>
                      </div>
@@ -143,7 +143,7 @@ use Carbon\Carbon;
                               <label for="studentName" class="form-label font-14 fw-bold text-purple  mb-0 ">Student Name</label>
                            </div>
                            <div class="col-lg-9">
-                              <input type="text" class="form-control fw-500 rounded-0 border-dark text-dark" id="studentName" placeholder="Enter student name">
+                              <input type="text" class="form-control fw-500 rounded-3 border-dark text-dark" id="studentName" placeholder="Enter student name">
                            </div>
                         </div>
                      </div>
@@ -155,11 +155,11 @@ use Carbon\Carbon;
                               <label for="studentName" class="form-label font-14 fw-bold text-purple  mb-0 ">Grade</label>
                            </div>
                            <div class="col-lg-9">
-                              <input type="text" class="form-control fw-500 rounded-0 border-dark text-dark" id="" placeholder="Enter grade">
+                              <input type="text" class="form-control fw-500 rounded-3 border-dark text-dark" id="" placeholder="Enter grade">
                            </div>
                         </div>
                      </div>
-                    
+
                      <div class="mb-3">
                         <div class="row align-items-center">
                            <div class="col-lg-3">
@@ -168,7 +168,7 @@ use Carbon\Carbon;
                               <label for="studentName" class="form-label font-14 fw-bold text-purple  mb-0 ">Phone  01</label>
                            </div>
                            <div class="col-lg-9">
-                              <input type="text" class="form-control fw-500 rounded-0 border-dark text-dark" id="" placeholder="Enter phone numbers 01">
+                              <input type="text" class="form-control fw-500 rounded-3 border-dark text-dark" id="" placeholder="Enter phone numbers 01">
                            </div>
                         </div>
                      </div>
@@ -180,7 +180,7 @@ use Carbon\Carbon;
                               <label for="studentName" class="form-label font-14 fw-bold text-purple  mb-0 ">Phone  02</label>
                            </div>
                            <div class="col-lg-9">
-                              <input type="text" class="form-control fw-500 rounded-0 border-dark text-dark" id="" placeholder="Enter phone numbers 02">
+                              <input type="text" class="form-control fw-500 rounded-3 border-dark text-dark" id="" placeholder="Enter phone numbers 02">
                            </div>
                         </div>
                      </div>
@@ -221,18 +221,18 @@ use Carbon\Carbon;
             <form class="mt-3">
                <div class="mb-3">
                   <label for="dateTime" class="form-label font-14 fw-bold text-purple  ">Date and Time on the Slip</label>
-                  <input type="text" class="form-control fw-500 rounded-0 border-dark" id="dateTime" placeholder="Enter date and time">
+                  <input type="text" class="form-control fw-500 rounded-3 border-dark" id="dateTime" placeholder="Enter date and time">
                </div>
                <div class="mb-3">
                   <label for="selectBank" class="form-label font-14 fw-bold text-purple  ">Select the Bank</label>
-                  <select class="form-select fw-500 rounded-0 border-dark text-dark" id="selectBank">
+                  <select class="form-select fw-500 rounded-3 border-dark text-dark" id="selectBank">
                      <option selected>Choose the bank</option>
                      <!-- Add bank options here -->
                   </select>
                </div>
                <div class="mb-3">
                   <label for="transferSlip" class="form-label font-14 fw-bold text-purple  ">Choose the Transfer Slip</label>
-                  <input type="file" class="form-control fw-500 rounded-0 border-dark" id="transferSlip">
+                  <input type="file" class="form-control fw-500 rounded-3 border-dark" id="transferSlip">
                </div>
             </form>
             <div class="d-flex justify-content-between align-items-center">
@@ -242,7 +242,7 @@ use Carbon\Carbon;
 
 
 
-               <div class="modal fade" id="accountBankView" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="accountBankView" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered ">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -253,7 +253,7 @@ use Carbon\Carbon;
                         <img class="d-block w-100  " src="{{asset('themes/default/img/account-bank.png')}}"
                         alt="Guru Niwasa LMS">
                     </div>
-                    
+
                   </div>
                 </div>
               </div>
@@ -275,11 +275,11 @@ use Carbon\Carbon;
                <button class="btn btn-secondary fw-500 font-11 px-2 rounded-pill text-white" data-bs-toggle="modal" data-bs-target="#slipUpdate">Click to Update the Bank Slip</button>
 
 
-               <div class="modal fade" id="slipUpdate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="slipUpdate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title font-18 fw-bold   text-purple pt-lg-0 pt-1" id="exampleModalLabel"> Bank Account View</h5>
+
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body text-center py-5">
@@ -306,7 +306,7 @@ use Carbon\Carbon;
                                                     <h3 class="font-16 fw-bold   text-purple">
                                                         Thank you !!!</h3>
                     </div>
-                    
+
                   </div>
                 </div>
               </div>
@@ -314,9 +314,35 @@ use Carbon\Carbon;
 
             </div>
             <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <div class="text-center">
                <p class="font-18 fw-bold   text-dark">Or</p>
-               <button class="btn btn-warning fw-500 font-13 text-white">Card Payment</button>
+               <button class="btn btn-warning fw-500 font-13 text-white" data-bs-toggle="modal" data-bs-target="#paymentView">Card Payment</button>
                <div class="mt-2">
                 <img class="w-100 mx-auto" src="{{ asset('themes/default/img/credit-cards.png') }}"
                 alt="Guru Niwasa LMS"  >
@@ -325,7 +351,102 @@ use Carbon\Carbon;
          </div>
       </div>
 
+
+
+
+
+       <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="paymentView" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+         <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h5 class="modal-title modal-title font-18 fw-bold   text-purple" id="exampleModalToggleLabel">Card Payment</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body py-2 text-center">
+               <p class="font-14 fw-bolder  text-purple  ">
+                  කාඩ්පතෙන් මුදල් ගෙවීම සාර්ථකව සිදු කිරීමට දෙවතා වක් ඔබ සාර්ථකව මුදල් ගෙවූ බවට තිරයේ දිස්වන තුරු රැදී සිටින්න. එනම්, payment gateway එකෙහි "Payment Approved" ලෙස දිස්වූ පසු ඉන් ඉවත් නොවී තවත් මද වේලාවක් රැදී සිටින්න. ඉන්පසු නැවත LMS ගිණුම විවෘත වන අතර එහි "කාඩ්පත් ගෙවීමක් මගින් ඔබ සාර්ථකව පන්ති ගාස්තු ගෙවා ඇත" ලෙස සටහන් වූ පසු ඔබගේ පන්ති ගාස්තු ගෙවීම සාර්ථක ලෙස සිදුවී ඇත. (මෙසේ දෙවතාවක් වැටෙනතෙක් අනිවාර්යයෙන්ම රැදී සිටින්න)
+
+               </p>
+               <p class="font-14 fw-bolder  text-purple pt-4">
+                  To successfully pay through the card, you must wait until you see the "You have successfully paid the
+                  total amount" message twice on the screen. This means you must wait until you see "Payment
+                  Approved" message from the payment gateway and after waiting a bit the LMS will automatically pop up
+                  and display "You have successfully conducted a card payment" message. Only after that the payment has
+                  been recorded successfully so please be cautious until you see both these messages.
+               </p>
+             </div>
+             <div class="modal-footer">
+               <button class="btn btn-info fw-500 font-13 text-white" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">
+                  Click to Continue</button>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+         <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+             <div class="modal-header">
+
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body text-center py-5">
+
+               <div class="success-checkmark">
+                   <div class="check-icon">
+                     <span class="icon-line line-tip"></span>
+                     <span class="icon-line line-long"></span>
+                     <div class="icon-circle"></div>
+                     <div class="icon-fix"></div>
+                   </div>
+                 </div>
+
+               <h3 class="font-16 fw-bold  text-purple pt-4">
+                     ඔබගේ ඇණවුම සාර්ථකව LMS පද්ධතියට ඇතුලත් කරන ලදී. එය අනුමත වූ වහාම ඔබ හට පණිවිඩයක් ලබා දෙනු ලබයි. !!
+               </h3>
+               <h3 class="font-16 fw-bold  text-purple pb-4">
+                   ස්තුතියි !!!</h3>
+
+               <h3 class="font-16 fw-bold  text-purple">
+                     Your order has been successfully placed in the LMS. You will receive a message once the order gets approved!
+
+                                           </h3>
+                                           <h3 class="font-16 fw-bold   text-purple">
+                                               Thank you !!!</h3>
+           </div>
+
+           </div>
+         </div>
+       </div>
+
+
+
+
+
+
+
+
+
+
+
       <div class="row justify-content-center pt-5">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="col-lg-8">
     <p class="font-14 fw-bolder text-purple text-center">

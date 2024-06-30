@@ -66,12 +66,27 @@ class LearningManagementController extends Controller
         }
     }
 
-    
+
+    public function revisingPlane()
+    {
+        try{
+
+            return view('web.learning-management.revising_plane');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
 
 
 
 
 
-    
+
+
+
+
+
 
 }
