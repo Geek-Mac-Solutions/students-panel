@@ -52,7 +52,7 @@
                 <a data-bs-toggle="modal" data-bs-target="#resultRank" class=" w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-success fw-500 align-items-center text-white  hvr-shrink">EXAM RESULTS</a>
 
 
-                
+
 
 
                </div>
@@ -62,7 +62,7 @@
       </div>
 
  <!-- Modal -->
- <div class="modal fade" id="resultRank" tabindex="-1" aria-labelledby="tableModalLabel" aria-hidden="true">
+ <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="resultRank" tabindex="-1" aria-labelledby="tableModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
@@ -89,12 +89,12 @@
                 <div class="col-lg-11">
 
              <table id="rankTable" class="table table-striped table-hover table-bordered text-start">
-                <thead class="text-white gradient-background text-uppercase fw-light font-15">
+                <thead class="text-white gradient-background text-uppercase fw-light font-14">
                    <tr>
                       <th>RANK</th>
                       <th>STUDENT NAME</th>
                       <th>MARKS (100)</th>
-                        
+
 
                    </tr>
                 </thead>
@@ -105,14 +105,14 @@
                     </td>
                       <td><p class="py-2 px-4 bg-success text-white font-13 text-center rounded-pill">
                         95</p></td>
-                      
+
                    </tr>
                 </tbody>
              </table>
             </div>
         </div>
         </div>
-         
+
       </div>
     </div>
   </div>

@@ -1,4 +1,4 @@
-<div class="footer-section">
+<div class="footer-section {{!isset($homeFooter) ? 'non_homePage':'homePage'}}">
     <div class="container-fluid py-2 bg-light1 ">
 
         <div class="row ">

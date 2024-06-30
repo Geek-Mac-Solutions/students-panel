@@ -8,6 +8,9 @@ $(document).ready( function () {
     $('#attendanceTable').DataTable();
     $('#notePaperTable').DataTable();
     $('#orderHistoryTable').DataTable();
+    $('#termTestTable').DataTable();
+    $('#requestSubjectTable').DataTable();
+    $('#revisionTable').DataTable();
 });
 
 $('.fees-Carousel').owlCarousel({

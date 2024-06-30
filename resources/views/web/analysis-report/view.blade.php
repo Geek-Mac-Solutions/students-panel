@@ -21,7 +21,7 @@
       <div class="col-12">
          <div class="table-responsive">
             {{-- <table id=" " class="table table-striped table-hover table-bordered">
-               <thead class="text-white gradient-background text-uppercase fw-light font-15">
+               <thead class="text-white gradient-background text-uppercase fw-light font-14">
                   <tr>
                      <th>Subject</th>
                      <th>ATTENDANCE</th>
@@ -59,7 +59,7 @@
             </table> --}}
 
                 <table class="table table-striped table-hover table-bordered">
-                    <thead class="text-white gradient-background text-uppercase fw-light font-15">
+                    <thead class="text-white gradient-background text-uppercase fw-light font-14">
                         <tr>
                             <th class="table-header" rowspan="2">Subject</th>
                             <th class="table-header" colspan="5">Attendance</th>

@@ -137,4 +137,34 @@ class StudentTalentController extends Controller
     }
 
 
+    public function termTest()
+    {
+        try{
+
+            return view('web.student_talents.term_test');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

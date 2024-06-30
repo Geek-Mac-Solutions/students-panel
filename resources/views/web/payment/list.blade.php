@@ -39,7 +39,7 @@
 
           <div class="table-responsive">
             <table id="paymentHistoryTable" class="table table-striped table-hover table-bordered">
-               <thead class="text-white gradient-background text-uppercase fw-light font-15">
+               <thead class="text-white gradient-background text-uppercase fw-light font-14">
                   <tr>
                      <th>Payment Date</th>
                      <th>Subject</th>

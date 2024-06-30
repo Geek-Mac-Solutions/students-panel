@@ -30,7 +30,7 @@ use Carbon\Carbon;
          </div>
          <div class="table-responsive  ">
             <table id="notePaperTable" class="table table-striped table-hover table-bordered">
-               <thead class="text-white gradient-background text-uppercase fw-light font-15">
+               <thead class="text-white gradient-background text-uppercase fw-light font-14">
                   <th>MONTH</th>
                   <th>TOPIC</th>
                   <th>DOCUMENT</th>

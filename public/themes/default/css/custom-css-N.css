@@ -527,6 +527,12 @@ a:hover,
     transform: rotate(-45deg);
     background-color: #FFFFFF;
   }
+  .min-height-card{
+    min-height: 200px;
+  }
+ .homePage{
+    display: none;
+ }
   
   @keyframes rotate-circle {
     0% {
@@ -640,6 +646,12 @@ a:hover,
         top: 1.4em;
 
     }
+    .font-14 {
+        font-size: 12px;
+    }
+    .font-27 {
+        font-size: 17px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -673,6 +685,18 @@ a:hover,
     .form-switch {
         padding-left: 1em;
     }
+    .tab-d-none{
+        display: none !important;
+    }
+    .tab-d-block{
+        display: block !important;
+    }
+    .font-14 {
+        font-size: 12px;
+    }
+    .font-27 {
+        font-size: 24px;
+    }
 }
 
 
@@ -704,6 +728,9 @@ a:hover,
     }
     .font-12 {
         font-size: 10px;
+    }
+    .font-27 {
+        font-size: 24px;
     }
 }
 

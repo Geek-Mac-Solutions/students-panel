@@ -18,4 +18,17 @@ class TeacherSubjectController extends Controller
             return;
         }
     }
+
+    public function requestSubject()
+    {
+        try{
+
+            return view('web.teacher-subject.request_subject');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+
 }
