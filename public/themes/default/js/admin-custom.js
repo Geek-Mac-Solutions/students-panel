@@ -95,6 +95,11 @@ new Chart(ctx, {
 
 $(document).ready(function() {
 
+    
+$('#sendOtpBtn').on('click', function() {
+    $('#verifyOTP').removeClass('d-none');
+  });
+
   var sync1 = $("#sync1");
   var sync2 = $("#sync2");
   var slidesPerPage = 4; //globaly define number of elements per page
@@ -189,3 +194,26 @@ document.addEventListener('DOMContentLoaded', function () {
         quantityInput.value = currentValue + 1;
     });
 });
+
+
+document.getElementById('gradeDropdown').addEventListener('change', function () {
+  var subjectSec = document.getElementById('subjectSec');
+  if (this.value) {
+      subjectSec.classList.remove('d-none');
+  } else {
+      subjectSec.classList.add('d-none');
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+

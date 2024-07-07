@@ -37,7 +37,7 @@
 
    <div class="col-12">
     <div class="row justify-content-center">
-        <div  class="col-6 mb-3  align-items-center">
+        <div  class="col-lg-6 col-sm-8 mb-3  align-items-center">
             <div class="border-new py-3 px-3 rounded-3 bg-white text-center">
                <h2 class="font-18 pb-3 fw-bold text-purple">ENTER YOUR LESSON
    
@@ -123,8 +123,36 @@
                </tbody>
             </table>
          </div>
-         <div class="col-12">
-            
+         <div class="col-12 mt-3">
+            <div class="timeline">
+                <div class="timeline-step">
+                  <strong>STUDIED DATE</strong>
+                </div>
+                <div class="timeline-step">
+                  <span>(+ 1 Day)</span>
+                  <strong>1st Revise</strong>
+                </div>
+                <div class="timeline-step">
+                  <span>(+ 3 Days)</span>
+                  <strong>2nd Revise</strong>
+                </div>
+                <div class="timeline-step">
+                  <span>(+ 3 Days)</span>
+                  <strong>3rd Revise</strong>
+                </div>
+                <div class="timeline-step">
+                  <span>(+ 7 Days)</span>
+                  <strong>4th Revise</strong>
+                </div>
+                <div class="timeline-step">
+                  <span>(+ 7 Days)</span>
+                  <strong>5th Revise</strong>
+                </div>
+                <div class="timeline-step">
+                  <span>(+ 7 Days)</span>
+                  <strong>6th Revise</strong>
+                </div>
+              </div>
          </div>
       </div>
 
