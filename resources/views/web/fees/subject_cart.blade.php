@@ -57,7 +57,12 @@ use Carbon\Carbon;
                 </div>
                
 
-
+                <div class=" text-center mt-5">
+                    <div class="discount-banner">
+                      <span class="discount-text">ADD 6 SUBJECTS FOR GET</span>
+                      <span class="discount-percentage">25% OFF</span>
+                    </div>
+                  </div>
 
 
             </div>

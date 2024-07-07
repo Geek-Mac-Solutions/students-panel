@@ -29,7 +29,7 @@
                            පන්ති පිලිබඳව විස්තර සඳහා සහ
                            ලියාපදිංචි වීම සඳහා පිවිසෙන්න.
                         </h3>
-                        <a href=" " class="hvr-shrink text-white gradient-background-1 py-2 px-5 justify-content-around rounded-35 mt-3"  >
+                        <a href="{{ route('web.register')}}" class="hvr-shrink text-white gradient-background-1 py-2 px-5 justify-content-around rounded-35 mt-3"  >
                         Click Here
                         </a>
                      </div>

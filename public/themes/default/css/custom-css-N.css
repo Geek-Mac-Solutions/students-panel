@@ -377,7 +377,9 @@ a:hover,
 .cricle-7{
  color: #e392ba;
 }
-
+.bg-success-subtle {
+    background-color: #d1e7dd;
+}
 
 
 #sync2 .owl-nav.disabled {
@@ -448,7 +450,7 @@ a:hover,
 }
 
 
- 
+
  .success-checkmark {
     width: 80px;
     height: 115px;
@@ -533,7 +535,75 @@ a:hover,
  .homePage{
     display: none;
  }
-  
+ .discount-banner {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+  }
+  .discount-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 0 15px 15px 0;
+    border-style: solid;
+    border-color: #ff0000 transparent;
+    width: 0;
+    height: 0;
+  }
+  .discount-text {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .discount-percentage {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .timeline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #eef2ff;
+    border-radius: 10px;
+  }
+  .timeline-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+    position: relative;
+  }
+  .timeline-step:not(:last-child) {
+    margin-right: 40px;
+  }
+  .timeline-step:not(:last-child)::after {
+    content: '\f061'; /* Font Awesome right arrow icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #000;
+  }
+  .timeline-step span {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  .timeline-step strong {
+    font-size: 16px;
+    color: #4b0082;
+  }
+
+
+
   @keyframes rotate-circle {
     0% {
       transform: rotate(-45deg);
@@ -652,6 +722,12 @@ a:hover,
     .font-27 {
         font-size: 17px;
     }
+    .timeline {
+        overflow-x: auto;
+    }
+    .font-16 {
+        font-size: 14px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -696,6 +772,14 @@ a:hover,
     }
     .font-27 {
         font-size: 24px;
+    }
+    .timeline-step strong {
+        font-size: 13px;
+        
+    }
+    .timeline-step span {
+        font-size: 11px;
+        
     }
 }
 
