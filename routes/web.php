@@ -36,8 +36,12 @@ use Illuminate\Support\Facades\Route;
 
 
 // AuthController
-Route::get('/home', [AuthController::class, 'homeView'])->name('web.home');
+Route::get('/', [AuthController::class, 'index'])->name('web.index');
+
+
 Route::get('/login', [AuthController::class, 'loginView'])->name('web.login');
+Route::post('/login', [AuthController::class, 'login'])->name('api.students.login');
+
 Route::get('/forgot_password', [AuthController::class, 'forgotPassword'])->name('web.forgot_password');
 Route::get('/register', [AuthController::class, 'registerView'])->name('web.register');
 Route::get('/register-step1', [AuthController::class, 'registerStep1'])->name('web.register.step1');
@@ -53,9 +57,11 @@ Route::get('/register-step5', [AuthController::class, 'registerStep5'])->name('w
 
 
 
-
-Route::get('/', [HomeController::class, 'index'])->name('web.home');
+Route::middleware(['check.authorization'])->group(function () {
+Route::post('/logout', [AuthController::class, 'logout'])->name('web.logout');   
+Route::get('/home', [HomeController::class, 'homeView'])->name('web.home');
 // LIVE CLASSES
+
 Route::get('/class/view', [ClassController::class, 'classView'])->name('web.class.view');
 
 // Video Recordings
@@ -164,4 +170,4 @@ Route::get('/teacher-subject', [TeacherSubjectController::class, 'teacherSubject
 Route::get('/request-subject',[TeacherSubjectController::class, 'requestSubject'])->name('web.teacher.request-subject');
 
 
-
+});

@@ -22,7 +22,7 @@
       @include('web.layouts.headers.header')
       @yield('content')
       @include('web.layouts.footers.footer')
-      @yield('scripts')
+      
 
       <!-- jQuery -->
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -60,5 +60,6 @@
 
 
       </script>
+      @yield('scripts')
    </body>
 </html>
