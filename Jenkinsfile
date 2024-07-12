@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout code') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/Geek-Mac-Solutions/students-panel.git']]])  // Change URL to your repo
+                checkout([$class: 'GitSCM', branches: [[name: '*/dev']], userRemoteConfigs: [[url: 'https://github.com/Geek-Mac-Solutions/students-panel.git']]])  // Change URL to your repo
             }
         }
 
@@ -40,7 +40,7 @@ pipeline {
 
     post {
         cleanup {
-            // Remove the SSH key file if necessary
+            // Remove the SSH key file if necessary//
             sh 'rm -f id_rsa'
         }
     }

@@ -1,110 +1,219 @@
-/** add active class and stay opened when selected */
-var url = window.location;
 
-// for sidebar menu entirely but not cover treeview
-$('ul.nav-sidebar a').filter(function () {
-    return this.href == url;
-}).addClass('active');
+$(document).ready( function () {
+    $('#paymentHistoryTable').DataTable();
+    $('#videoRecTable').DataTable();
+    $('#onlinExamTable').DataTable();
+    $('#onlinTestResultTable').DataTable();
+    $('#rankTable').DataTable();
+    $('#attendanceTable').DataTable();
+    $('#notePaperTable').DataTable();
+    $('#orderHistoryTable').DataTable();
+    $('#termTestTable').DataTable();
+    $('#requestSubjectTable').DataTable();
+    $('#revisionTable').DataTable();
+});
 
-// for treeview
-$('ul.nav-treeview a').filter(function () {
-    return this.href == url;
-}).parentsUntil(".nav-sidebar > .nav-treeview").addClass('menu-open').prev('a').addClass('active');
+$('.fees-Carousel').owlCarousel({
+    margin: 30,
+    loop: true,
+    dots: false,
+    nav: true,
+    center: true,
+    autoplay: true,
 
-//for image
-function previewImage(input) {
-    if (input.files && input.files[0]) {
-        var reader = new FileReader();
-        reader.onload = function (e) {
-            $('.selected-image').attr('src', e.target.result);
+    responsive: {
+        0: {
+            items: 1,
+
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
         }
-        reader.readAsDataURL(input.files[0]);
-    }
-}
-
-
-$('#category').change(function () {
-    var selectedValue = $(this).val();
-    var selectedText = $(this).find('option:selected').text();
-
-    if ($('#selected-categories li input[value="' + selectedValue + '"]').length === 0) {
-        var newItem = $('<ul style="display: flex;"><li class="selected-option" style="display: none;">' + selectedText + '<input type="hidden" name="selectedOptions[]" value="' + selectedValue + '"></li></ul>');
-        $('#selected-categories').append(newItem);
-        newItem.find('li').fadeIn();
-        $('.is-available').hide();
-    } else {
-        $('.is-available').show();
     }
 });
 
-$('#selected-categories').on('click', 'ul', function () {
-    var selectedValue = $(this).find('input[name="selectedOptions[]"]').val();
-    $(this).fadeOut('fast', function () {
-        $(this).remove();
-        $('#category option[value="' + selectedValue + '"]').prop('selected', false);
-        $('.is-available').hide();
+
+
+
+$('.reviwe-teacher').owlCarousel({
+    margin: 30,
+    loop: true,
+    dots: false,
+    nav: true,
+    center: true,
+    autoplay: true,
+
+    responsive: {
+        0: {
+            items: 1,
+
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 1
+        }
+    }
+});
+
+
+
+const ctx = document.getElementById('timeMgtChart');
+
+new Chart(ctx, {
+  type: 'pie',
+  data: {
+    labels: ['NO RECORD', 'SELF STUDIES', 'SCHOOL', 'TUTION CLASSES', 'EXTRA ACTIVITIES', 'SPORTS / EXCERCISE','SLEEPING'],
+    datasets: [{
+      label: '%',
+      data: [12, 8, 30, 25, 10, 5,10],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+
+    
+$('#sendOtpBtn').on('click', function() {
+    $('#verifyOTP').removeClass('d-none');
+  });
+
+  var sync1 = $("#sync1");
+  var sync2 = $("#sync2");
+  var slidesPerPage = 4; //globaly define number of elements per page
+  var syncedSecondary = true;
+
+  sync1.owlCarousel({
+    items : 1,
+    slideSpeed : 2000,
+    nav: false,
+    autoplay: true,
+    dots: false,
+    loop: true,
+    responsiveRefreshRate : 200,
+
+  }).on('changed.owl.carousel', syncPosition);
+
+  sync2
+    .on('initialized.owl.carousel', function () {
+      sync2.find(".owl-item").eq(0).addClass("current");
+    })
+    .owlCarousel({
+    items : slidesPerPage,
+    dots: false,
+    nav: false,
+    smartSpeed: 200,
+    items : 4,
+    margin:15,
+    slideSpeed : 500,
+    slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
+    responsiveRefreshRate : 100
+  }).on('changed.owl.carousel', syncPosition2);
+
+  function syncPosition(el) {
+
+    var count = el.item.count-1;
+    var current = Math.round(el.item.index - (el.item.count/2) - .5);
+
+    if(current < 0) {
+      current = count;
+    }
+    if(current > count) {
+      current = 0;
+    }
+
+    //end block
+
+    sync2
+      .find(".owl-item")
+      .removeClass("current")
+      .eq(current)
+      .addClass("current");
+    var onscreen = sync2.find('.owl-item.active').length - 1;
+    var start = sync2.find('.owl-item.active').first().index();
+    var end = sync2.find('.owl-item.active').last().index();
+
+    if (current > end) {
+      sync2.data('owl.carousel').to(current, 100, true);
+    }
+    if (current < start) {
+      sync2.data('owl.carousel').to(current - onscreen, 100, true);
+    }
+  }
+
+  function syncPosition2(el) {
+    if(syncedSecondary) {
+      var number = el.item.index;
+      sync1.data('owl.carousel').to(number, 100, true);
+    }
+  }
+
+  sync2.on("click", ".owl-item", function(e){
+    e.preventDefault();
+    var number = $(this).index();
+    sync1.data('owl.carousel').to(number, 300, true);
+  });
+  });
+// scripts.js
+document.addEventListener('DOMContentLoaded', function () {
+    const minusButton = document.getElementById('minus');
+    const plusButton = document.getElementById('plus');
+    const quantityInput = document.getElementById('quantity');
+
+    minusButton.addEventListener('click', function () {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue > 0) {
+            quantityInput.value = currentValue - 1;
+        }
+    });
+
+    plusButton.addEventListener('click', function () {
+        let currentValue = parseInt(quantityInput.value);
+        quantityInput.value = currentValue + 1;
     });
 });
 
-//components assign to pages
-function setSelectedComponent(){
 
-    let componentParams = document.getElementById('component-select').value;
+document.getElementById('gradeDropdown').addEventListener('change', function () {
+  var subjectSec = document.getElementById('subjectSec');
+  if (this.value) {
+      subjectSec.classList.remove('d-none');
+  } else {
+      subjectSec.classList.add('d-none');
+  }
+});
 
-    let segments = componentParams.split('-');
 
-    let componentsDiv = document.getElementById('selected-components');
 
-    if(componentsDiv !== null){
 
-        let html = '<button class=" mx-1 btn btn-secondary btn-sm" id="selected-comp'+segments[0]+'" type="button" onClick="removeComponent('+segments[0]+')"><input type="text" name="selectedComponents[]" value="'+segments[0]+'" hidden>'+segments[1]+'</button>';
 
-        let component = document.getElementById('selected-comp'+segments[0]);
 
-        if(component === null){
 
-            componentsDiv.innerHTML = componentsDiv.innerHTML + html;
-        }
-    }
 
-}
 
-//generate slug
-function generateSlug () {
 
-    let str = document.getElementById('title-field').value;
-    
-    str = str.replace(/^\s+|\s+$/g, ''); // trim
-    str = str.toLowerCase();
-  
-    // remove accents, swap ñ for n, etc
-    var from = "àáäâèéëêìíïîòóöôùúüûñç·/_,:;";
-    var to   = "aaaaeeeeiiiioooouuuunc------";
-    for (var i=0, l=from.length ; i<l ; i++) {
-        str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
-    }
 
-    str = str.replace(/[^a-z0-9 -]/g, '') // remove invalid chars
-        .replace(/\s+/g, '-') // collapse whitespace and replace by -
-        .replace(/-+/g, '-'); // collapse dashes
 
-    let randomNum = Math.floor(Math.random() * 100) + 1;
-
-    let slugField = document.getElementById('slug-field');
-
-    if(slugField !== null){
-
-        slugField.value = str+'-'+randomNum;
-    }
-}
-
-//draggable table - view component by page
-// $(function () {
-//     $("tbody").sortable({
-//         cursor: 'row-resize',
-//         placeholder: 'ui-state-highlight',
-//         opacity: '0.55',
-//         items: '.ui-sortable-handle'
-//     }).disableSelection();
-// });
 
