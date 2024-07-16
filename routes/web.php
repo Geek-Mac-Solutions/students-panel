@@ -47,11 +47,15 @@ Route::get('/register', [AuthController::class, 'registerView'])->name('web.regi
 Route::get('/register-step1', [AuthController::class, 'registerStep1'])->name('web.register.step1');
 Route::get('/register-step2', [AuthController::class, 'registerStep2'])->name('web.register.step2');
 Route::get('/register-step3', [AuthController::class, 'registerStep3'])->name('web.register.step3');
-Route::get('/register-step4', [AuthController::class, 'registerStep4'])->name('web.register.step4');
-Route::get('/register-step5', [AuthController::class, 'registerStep5'])->name('web.register.step5');
+Route::post('/register-step4', [AuthController::class, 'registerStep4'])->name('web.register.step4');
+Route::get('/register-step4', [AuthController::class, 'registerStep4back'])->name('web.register.step4back');
+Route::post('/register-Step4Post', [AuthController::class, 'registerStep4Post'])->name('web.register.step4Post');
+Route::get('/register-stepOTP', [AuthController::class, 'registerStepOTP'])->name('web.register.stepOTP');
+Route::post('/register-step5', [AuthController::class, 'registerStep5'])->name('web.register.step5');
+Route::post('/otp-verify', [AuthController::class, 'otpVerify'])->name('web.otp_verify');
 
 
-
+Route::post('/register-data', [AuthController::class, 'registerData'])->name('web.register.data');
 
 
 

@@ -1,12 +1,21 @@
 @extends('web.layouts.app')
 @section('content')
+
+@if(session()->has('student_data'))
+    @php
+        $studentData = session('student_data');
+    @endphp
+@else
+     <script>window.location = "{{ route('web.logout') }}";</script>
+@endif
+
 <div class="container-fluid">
    <div class="row align-items-center pt-2">
       <div class="col-lg-3 col-sm-2">
-         <h2 class="font-24 fw-bold text-purple">Grade -</h2>
+         <h2 class="font-24 fw-bold text-purple">{{ $studentData['grades']['gname'] }}</h2>
       </div>
       <div class="col-lg-6 col-sm-6 text-center pt-lg-0 pt-3">
-         <p class="font-17 fw-bolder text-purple">Hello, <span class="fst-italic">< Nadishan Chathuranga ></span>
+         <p class="font-17 fw-bolder text-purple">Hello, <span class="fst-italic">< {{ $studentData['full_name'] }} ></span>
          </p>
          <h1 class="font-36 fw-bold text-uppercase text-purple pt-lg-0 pt-1">WELCOME TO GURU NIWASA LMS
          </h1>
@@ -18,9 +27,9 @@
                   <div class="row align-items-end">
                      <div class="col-lg-4 col-sm-3 col-2"> <label class="form-check-label font-12 fw-bolder text-uppercase text-purple" for="flexSwitchCheckDefault">BASIC</label>
                      </div>
-                     <div class="col-lg-4 col-sm-4  col-3">   <input class="form-check-input font-14  w-100 pt-3 pb-2 text-uppercase text-purple ms-0" type="checkbox" id="flexSwitchCheckDefault">
+                     <div class="col-lg-4 col-sm-4  col-3"><input class="form-check-input font-14  w-100 pt-3 pb-2 text-uppercase text-purple ms-0" type="checkbox" id="flexSwitchCheckDefault">
                      </div>
-                     <div class="col-lg-4 col-sm-2 col-4">   <label class="form-check-label font-12 fw-bolder text-uppercase text-purple" for="flexSwitchCheckDefault">ADVANCED</label>
+                     <div class="col-lg-4 col-sm-2 col-4"><label class="form-check-label font-12 fw-bolder text-uppercase text-purple" for="flexSwitchCheckDefault">ADVANCED</label>
                      </div>
                   </div>
                </div>

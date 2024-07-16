@@ -33,6 +33,7 @@ class CheckAuthorization
             if ($response->getStatusCode() == 200) {
                 $body = json_decode($response->getBody(), true);
                 if (isset($body['status']) && $body['status'] === 200) {
+                     $request->session()->put('student_data', $body['data']);
                     return $next($request);
                 }
             }
