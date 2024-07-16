@@ -45,8 +45,10 @@ class AuthController extends Controller
             ]);
             
             if ($response->getStatusCode() == 200) {
+                
                 $body = json_decode($response->getBody(), true);
                 if (isset($body['status']) && $body['status'] === 200) {
+                    
                     return redirect()->route('web.home')->with('success', $body['message']);
                 }else{
                     $homeHeader = 1;
@@ -136,35 +138,191 @@ class AuthController extends Controller
 
 
 
-    public function registerStep4()
+    public function registerStep4(Request $request)
     {
+       
+        
+       
+
         try{
+            $grade = $request->grade;
+            $subjectList = $request->selectedSubjects;
+            return view('web.auth.register-step4',compact('grade','subjectList'));
 
-            return view('web.auth.register-step4');
+        }catch(\Exception $e){
 
-        }catch(\Exception $exception){
-
-            return;
+            return back()->with('error', $e);
         }
     }
 
+    public function registerStep4back(){
 
+        return redirect()->route('web.register.step3');
+    }
 
+   public function registerStep4Post(Request $request)
+{
     
-    public function registerStep5()
-    {
-        try{
+    $client = new Client();
+    $url = env('API_GETWAY_URL') . '/api/v1/send-otp';
 
-            return view('web.auth.register-step5');
+    try {
+        // Make POST request to API endpoint
+        $response = $client->post($url, [
+            'headers' => [
+                'CLIENT_KEY' => $this->serverApiKey,
+            ],
+            'form_params' => [
+                'phone' => $request->phone_number,
+            ]
+        ]);
+
+        if ($response->getStatusCode() == 200) {
+            $body = json_decode($response->getBody(), true);
+
+            if (isset($body['status']) && $body['status'] === 200) {
+                $otp = $body['data']; // Extract OTP from response data
+                $subjectList = $request->subject_list;
+                $grade = $request->grade;
+                $phone = $request->phone_number;
+
+                // Redirect to view with OTP and subject list
+                session(['otp' => $otp, 'subjectList' => $subjectList, 'phone_number' => $phone, 'grade' => $grade]);
+                return redirect()->route('web.register.stepOTP');
+            } else {
+                return back()->with('error', $body['message']);
+            }
+        } else {
+            return back()->with('error', 'Failed to send OTP. Please try again later.');
+        }
+    } catch (\Exception $e) {
+        return back()->with('error', $e->getMessage());
+    }
+}
+
+
+    public function registerStepOTP (Request $request){
+       
+        try{
+             $otp = session('otp');
+             $grade = session('grade');
+             $subjectList = session('subjectList');
+             $phone = session('phone_number');
+            return view('web.auth.register-stepOTP', compact('otp', 'subjectList','phone','grade'));
+            
 
         }catch(\Exception $exception){
 
             return;
         }
+    } 
+
+
+    public function otpVerify(Request $request)
+    {
+        
+        try {
+            $user_otp = $request->user_otp;
+            $otp = session('otp');
+            $subjectList = session('subjectList');
+            $grade = session('grade');
+            $phone = $request->phone_number;
+
+            if ($user_otp == $otp) {
+                $status = 'success';
+                $message = 'OTP verified successfully!';
+
+            } else {
+                $status = 'error';
+                $message = 'OTP verification failed. Please try again.';
+            }
+
+            return view('web.auth.register-stepOTP', compact('status', 'message', 'otp', 'subjectList', 'phone', 'grade'));
+
+        } catch (\Exception $exception) {
+            return;
+        }
     }
+   public function registerStep5(Request $request)
+{
+    try {
+        // Retrieve data from the request
+        $otp = $request->input('otp');
+        $phone = $request->input('phone_number');
+        $grade = $request->input('grade');
+        $subjectList = json_decode($request->input('subject_list'));
+
+        // Return view with necessary data
+        return view('web.auth.register-step5', [
+            'otp' => $otp,
+            'phone' => $phone,
+            'grade' => $grade,
+            'subjectList' => $subjectList,
+        ]);
+
+    } catch(\Exception $exception) {
+        // Handle exceptions, e.g., redirect to a previous step
+        return redirect()->route('web.register.step3');
+    }
+}
 
 
+public function registerData(Request $request){
+    $client = new Client();
+    $url = env('API_GETWAY_URL') . '/api/v1/register-student';
 
+    try {
+        // Make POST request to API endpoint
+        $response = $client->post($url, [
+            'headers' => [
+                'CLIENT_KEY' => $this->serverApiKey,
+            ],
+            'form_params' => [
+                'username' => $request->phone,
+                'subject' => $request->subjectList,
+                'password' => $request->password,
+                'full_name' => $request->full_name,
+                'student_code' => $request->unique_code,
+                'birthday' => $request->dob,
+                'gender' => $request->gender,
+                'address' => $request->address,
+                'school' => $request->school,
+                'district' => $request->district,
+                'city' => $request->town,
+                'parent_phone' => $request->parent_phone,
+                'grade' => $request->grade,
+                'subject_list' => $request->subjectList
+            ]
+        ]);
+
+        if ($response->getStatusCode() == 200) {
+            $body = json_decode($response->getBody(), true);
+
+            if (isset($body['status']) && $body['status'] === 201) {
+                $body = json_decode($response->getBody(), true);
+              
+                if (isset($body['status']) && $body['status'] === 201) {
+                    $homeHeader = 1;
+                    $homeFooter= 1;
+                    return redirect()->route('web.login')->with('homeHeader','homeFooter');
+                }else{
+                     return redirect()->route('web.login')->with('homeHeader','homeFooter');
+                }
+            } else {
+               
+                return back()->with('error', $body['message']);
+            }
+        } else {
+            return $response->getBody();
+            
+        }
+    } catch (\Exception $e) {
+       
+                    $homeHeader = 1;
+                    $homeFooter= 1;
+                    return view('web.auth.login',compact('homeHeader','homeFooter'));
+    }
+}
 
 
 

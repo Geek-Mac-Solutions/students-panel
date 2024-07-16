@@ -14,14 +14,19 @@
                 <a class="social-button text-white hvr-wobble-bottom" href="{{ route('web.profile') }}"  >
                 <i class="fa  fa-user font-16"></i>
                 </a>
-                <!-- Logout Link -->
-                <form id="logout-form" action="{{ route('web.logout') }}" method="POST" style="display: none;">
-                    @csrf
-                </form>
-                <a class="social-button text-white hvr-wobble-bottom" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                    <i class="fa fa-sign-out font-16"></i>
-                </a>
+                @if(session()->has('student_data'))
+                    <!-- Logout Link -->
+                        <form id="logout-form" action="{{ route('web.logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                        <a class="social-button text-white hvr-wobble-bottom" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            <i class="fa fa-sign-out font-16"></i>
+                        </a>
 
+                @else
+                   
+                @endif
+                
         </div>
     </div>
 

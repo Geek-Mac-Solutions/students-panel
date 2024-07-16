@@ -17,6 +17,7 @@
       <link rel="stylesheet" href="{{asset('themes/default/css/hover.css')}}">
       <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
       <link rel="stylesheet" href="{{asset('themes/default/css/custom-css-N.css')}}">
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
    </head>
    <body>
       @include('web.layouts.headers.header')

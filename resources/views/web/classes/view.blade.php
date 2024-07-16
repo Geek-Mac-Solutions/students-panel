@@ -24,56 +24,44 @@
 </div>
 <div class="container-fluid py-lg-5 py-3 px-lg-5 ">
    <div class="row middle-hight">
-      <div  class="col-lg-3 col-sm-4 mb-3 align-items-center">
-         <div class="border-new pt-3 pb-5 px-3 rounded-35 bg-white text-center">
-            <h3 class="font-20 fw-bold pb-2">8.00 - 10.00 PM
-            </h3>
-            <div class="row justify-content-center pt-2 pb-3">
-               <div class="col-6">
-                  <img class="d-block w-100 rounded-circle" src="{{asset('themes/default/img/place-holder.png')}}"
-                     alt="Guru Niwasa LMS">
-               </div>
+          @foreach($body['data']['current_lessons'] as $lesson)
+        <div class="col-lg-3 col-sm-4 mb-3 align-items-center">
+            <div class="border-new pt-3 pb-5 px-3 rounded-35 bg-white text-center">
+                <h3 class="font-20 fw-bold pb-2">
+                    {{ \Carbon\Carbon::parse($lesson['start_time'])->format('g:i A') }} - {{ \Carbon\Carbon::parse($lesson['end_time'])->format('g:i A') }}
+                </h3>
+                <div class="row justify-content-center pt-2 pb-3">
+                    <div class="col-6">
+                        <img class="d-block w-100 rounded-circle" src="{{ asset('themes/default/img/place-holder.png') }}" alt="Guru Niwasa LMS">
+                    </div>
+                </div>
+                <p class="font-14 fw-500 text-dark text-start">Grade - <span class="fw-bolder">Grade {{ $lesson['gid'] }}</span></p>
+                <p class="font-14 fw-500 text-dark text-start">Subject - <span class="fw-bolder">{{ $lesson['title'] }}</span></p>
+                <p class="font-14 fw-500 text-dark text-start">Class Status - <span class="fw-bolder text-success">{{ $lesson['status'] == 0 ? 'Scheduled' : 'Completed' }}</span></p>
+                <p class="font-14 fw-500 text-dark text-start">Special Note - <span class="fw-bolder font-12">{{ $lesson['special_note'] }}</span></p>
+                <p class="font-14 fw-500 text-dark text-start">Zoom Password - <span class="fw-bolder">{{ $lesson['password'] }}</span></p>
+                <div class="row justify-content-center pt-4">
+                    <div class="col-lg-10 text-white e">
+                        @if($lesson['status'] == 0)
+                            <button class="border-0 btn-cus w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-success fw-500 align-items-center text-white hvr-shrink" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                CLICK TO JOIN <br>
+                                <span class="font-9">FIRST WEEK PASS</span>
+                            </button>
+                        @elseif($lesson['status'] == 1)
+                            <button class="border-0 btn-cus w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-danger fw-500 align-items-center text-white hvr-shrink" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                YOU CAN’T WATCH <br>
+                                <span class="font-9">Class Fees Pending</span>
+                            </button>
+                        @else
+                            <button class="border-0 btn-cus w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-warning fw-500 align-items-center text-white hvr-shrink" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                ENDED
+                            </button>
+                        @endif
+                    </div>
+                </div>
             </div>
-            <p class="font-14 fw-500 text-dark text-start">Grade - <span class="fw-bolder">Grade 6</span></p>
-            <p class="font-14 fw-500 text-dark text-start">Subject - <span class="fw-bolder"> Mathematics Theory | English
-               Medium | Shehan Sir
-               </span>
-            </p>
-            <p class="font-14 fw-500 text-dark text-start">Class Status - <span class="fw-bolder text-success"> Scheduled
-               </span>
-            </p>
-            <p class="font-14 fw-500 text-dark text-start">Special Note - <span class="fw-bolder font-12">Lorem Ipsum. "Neque porro quisquam est qui dolorem</span></p>
-            <p class="font-14 fw-500 text-dark text-start">Zoom Password - - <span class="fw-bolder">8899</span></p>
-            <div class="row justify-content-center pt-4">
-               <div class="col-lg-10 text-white e">
-
-
-
-                     <button  class="border-0 btn-cus w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-success fw-500 align-items-center text-white hvr-shrink   "  data-bs-toggle="modal" data-bs-target="#exampleModal">
-
-
-                            CLICK TO JOIN <br>
-                            <span class="font-9"> FIRST WEEK PASS</span>
-
-
-                      </button><br><br>
-                      <button  class="border-0 btn-cus w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-danger fw-500 align-items-center text-white hvr-shrink   "  data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        YOU CAN’T WATCH  <br>
-                        <span class="font-9">Class Fees Pending</span>
-
-
-                  </button>
-                  <br><br>
-                      <button  class="border-0 btn-cus w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3 bg-warning fw-500 align-items-center text-white hvr-shrink   "  data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        ENDED
-
-
-                  </button>
-
-               </div>
-            </div>
-         </div>
-      </div>
+        </div>
+    @endforeach
 
 
 
